@@ -1,0 +1,28 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.ipynb_checkpoints/
+*.log
+modules/**/logs/
+modules/**/outputs/tmp/
+tmp/
+cache/
+.cache/
+
+# External reference repositories remain local read-only inputs.
+repos/*/
+!repos/README.md
+
+# 逐论文 LLM 调用缓存（可再生；聚合产物 annotations.jsonl / 派生 JSON 仍跟踪）
+data/**/requests/
+data/**/responses/
+
+# 含摘要全文的产物留本地（public 仓库不批量再分发语料；派生指标与比较 JSON 仍跟踪）
+data/**/corpus_manifest.jsonl
+data/**/dev_set_manifest.jsonl
+data/**/*annotations*.jsonl
