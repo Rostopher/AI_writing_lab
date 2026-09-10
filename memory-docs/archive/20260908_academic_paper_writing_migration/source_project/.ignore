@@ -1,0 +1,11 @@
+modules/**/logs/
+**/__pycache__/
+.venv/
+venv/
+.cache/
+cache/
+tmp/
+papers/**/images/
+
+# Do not recursively search cloned external repositories by default.
+repos/*/
