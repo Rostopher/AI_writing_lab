@@ -43,3 +43,23 @@ AGENTS.md 与 README 体系。期刊数据继续由姊妹仓库 `playwright_craw
 本次工作没有产生实验结果或重新确认研究优先级。学术研究主线与通用模块预留边界保持生效。
 
 来源、文件映射与完整性证据见[迁移档案](archive/20260908_academic_paper_writing_migration/manifest.md)。
+
+## 2026-09-08 → 09-10 — 首个实现落地：摘要结构研究两轮运行与仓库公开
+
+迁移完成当天，学术方向即选定首个实际研究任务：经济学五刊摘要结构标注研究。
+当天完成工程层（五刊摘要抽取、DeepSeek 客户端、契约校验、派生指标）与
+100 篇双模型 pilot（`run_20260908_a`），pilot 证伪了「固定句数配比」公式，
+并暴露 why_it_matters 边界、机制句双标等口径难点；据此 prompt 从 v0.2 迭代到
+v0.3。09-09 完成 4250 篇全量描述（`run_20260909_v03_full`，flash 单模型零失败，
+¥96），并应用户要求直接从已有标注派生出句数分布与位置×功能分析（中位 5 句、
+4–6 句占 65.5%；首句 what 主导、中段 findings 主场、末句 findings/why 收尾），
+未新增模型调用。两份报告在 `notes/data/`。
+
+09-10 项目建立 Git 版本化并推送 GitHub public。推送前做了两处合规处理：
+代码中的私有绝对路径改为环境变量配置；逐论文调用缓存与含摘要全文的产物
+留本地、只入派生层（DEC-007）。仓库从「无提交、无远端、近万未跟踪文件」
+整理为 6 个语义化 commit。
+
+- 相关决策：DEC-007（数据边界）；DEC-004 继续约束报告口径（观察 ≠ 因果）
+- 相关文档：`notes/data/abstract_structure_full_report_v03.md`、
+  `modules/academic_research/abstract_structure/README.md`

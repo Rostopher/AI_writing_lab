@@ -10,33 +10,39 @@ stale_after_days: 14
 
 # Status — AI Writing Lab
 
-> 更新时间：2026-09-08
+> 更新时间：2026-09-10
 
 ## Current Focus
 
-- 学术研究与写作为当前主线；已接续姊妹仓库 `academic_paper_writing` 的研究设计、
-  分层写作框架、参考工具调研与六个固定参考仓库。
-- 当前有研究笔记和 proposal，**尚无业务实现、标注实验结果或论文工作区接入**。
-- 下一步仍需选定首个实际研究任务。已有 Introduction rubric pilot 是可接续的方案，
-  本次迁移不表示已经选定样本、启动实验或验证了评分规则。
+- 学术研究与写作为当前主线；首个实现 `modules/academic_research/abstract_structure/`
+  已完成摘要结构研究两轮付费运行（pilot + 全量描述），产出两份报告。
+- 仓库已建立 Git 版本化并推送 GitHub public（`Rostopher/AI_writing_lab`）。
+- 摘要结构研究第二阶段（规则审查 §7/H5、15 篇不一致案例复核、是否跑全量 pro）
+  尚未启动；写作检查项落地前需先定目标期刊口径。
 
 ## Done（最近 3-5 条）
 
-- [x] 接续旧学术写作研究（2026-09-08）— 材料进入 notes/ideas/repos；原项目说明与记忆保留在[迁移档案](archive/20260908_academic_paper_writing_migration/manifest.md)，源位置保留重定向。
-- [x] 确定总项目形态：单仓库多方向，`AI_writing_lab`（2026-09-07）— 学术/商业/通用写作能力共用一仓，明确拆仓触发条件
-- [x] 仓库初始化（2026-09-07）— 建立 research scaffold 目录、`memory-docs/`（vibe-memory-system 模板）、`AGENTS.md`、README 体系
-- [x] 定义模块规划（2026-09-07）— academic_research（主线）、academic_writing、writing_pipeline/evaluation（预留）、business_writing（待任务）
+- [x] Git 首次提交并推送 GitHub public（2026-09-10）— 6 个语义化 commit；私有路径改环境变量配置；含摘要全文产物留本地（DEC-007）
+- [x] 摘要结构全量描述 `run_20260909_v03_full`（2026-09-09）— 4250 篇 flash 标注零失败（¥96）；句数分布与位置×功能分析同日补入[全量报告](../notes/data/abstract_structure_full_report_v03.md)
+- [x] 摘要结构 pilot `run_20260908_a`（2026-09-08）— 100 篇双模型零失败（约 ¥7）；句数公式证伪；见[pilot 报告](../notes/data/abstract_structure_pilot_report.md)
+- [x] 接续旧学术写作研究（2026-09-08）— 材料进入 notes/ideas/repos；见[迁移档案](archive/20260908_academic_paper_writing_migration/manifest.md)
+- [x] 确定总项目形态与仓库初始化（2026-09-07）— 单仓库多方向（DEC-001）、research scaffold、memory-docs
 
 ## In Progress
 
-- 写作分析与评价处于研究设计阶段：已有五层候选框架、validity-first 评价 proposal 和 skills 调研；尚未执行 rubric pilot。
+- 摘要结构研究：描述阶段完成，可靠性补强与规则审查待启动（见 Backlog 前三条，
+  执行顺序未确认）。
+- 学术写作评价设计：`ideas/evaluation_design.md` 仍为 proposal；Introduction rubric
+  pilot 是未启动的候选方案。
 
 ## Backlog
 
-- 选定期刊或研究问题，开始文献调研与期刊案例分析（`notes/paper-reading/`）。
-- 接续候选方案：明确 Introduction 的标注单位、事实保持项与评审流程，获取适用样本，检验评审一致性（`ideas/evaluation_design.md`）。
-- 核验、提炼参考 skills 中可迁移的检查项；现有静态调研排序不代表实测效果。
-- 评估 `papers/` 物化与数据工作区（依赖 playwright_crawler 数据）。以上任务的执行顺序尚未确认。
+- 15 篇同文标签不一致案例人工复核（全量可靠性证据）。
+- 规则审查小样本（设计 §7/H5，套话/术语/识别策略，约 ¥6 量级）。
+- 全量 pro（约 ¥150–200）：仅在需要全量尺度双模型证据时运行。
+- 把「Why 仅 25%」「理论论文常省 how」「位置×功能倾向」做成写作检查项前，
+  先决定目标期刊口径（按本刊风格对齐，不套全刊平均）。
+- 评估 `papers/` 物化与数据工作区（依赖 playwright_crawler 数据）。
 
 ## 当前必须遵守的约束（快照）
 
@@ -44,8 +50,10 @@ stale_after_days: 14
 
 - 单仓库策略生效中；拆仓仅在触发条件满足时（DEC-001）
 - 写作特征观察 ≠ 期刊青睐原因（DEC-004）；评价先拆可观察维度（CONVENTIONS）
-- 学术修改先检查事实、引用、证据强度与作者意图保持；历史 rubric、阈值和 taxonomy 仍待验证。
+- 学术修改先检查事实、引用、证据强度与作者意图保持；历史 rubric、阈值和 taxonomy 仍待验证
 - writing_pipeline / evaluation 为预留模块，不提前实现（DEC-001）
+- public 仓库数据边界：LLM 调用缓存与含摘要全文产物不入库，只入派生层；
+  凭据与私有路径走环境变量（DEC-007）
 
 ## 相关文档
 

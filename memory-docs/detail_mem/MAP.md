@@ -11,7 +11,7 @@ not_for: "术语定义（-> GLOSSARY），当前状态（-> STATUS），全量�
 > MAP 只记**概念 / 功能 → 1-2 个入口文件**，是给 Agent 的**快速导航指针**。
 > 拿到入口后，剩下的自己读代码。
 >
-> 当前已有迁入的研究设计与参考材料，尚无业务实现。模块目录仍为规划入口。
+> 当前首个实现为 abstract_structure 摘要结构研究管线；其余模块仍为规划入口。
 
 ## 研究材料层
 
@@ -27,9 +27,21 @@ not_for: "术语定义（-> GLOSSARY），当前状态（-> STATUS），全量�
 - 六个参考快照及来源：[repos 入口](../../repos/README.md)。
 - 旧项目路径、版本和历史决策：[迁移档案](../archive/20260908_academic_paper_writing_migration/manifest.md)。
 
+## 摘要结构研究（academic_research 首个实现）
+
+- 模块入口与命令清单：[abstract_structure README](../../modules/academic_research/abstract_structure/README.md)。
+- 标注执行：[run_annotation.py](../../modules/academic_research/abstract_structure/run_annotation.py)；
+  派生指标：[derive_metrics.py](../../modules/academic_research/abstract_structure/derive_metrics.py)；
+  句数与位置×功能：[analyze_sentence_positions.py](../../modules/academic_research/abstract_structure/analyze_sentence_positions.py)。
+- 结果报告：[pilot](../../notes/data/abstract_structure_pilot_report.md)、
+  [全量 v0.3](../../notes/data/abstract_structure_full_report_v03.md)；
+  设计与 prompt 版本见 `ideas/abstract_structure_study_design*.md`。
+- 运行产物：`data/processed/abstract_structure/run_*`（含摘要全文的语料与标注仅本地，DEC-007）。
+
 ## 模块（规划中 → 建立后更新真实入口）
 
 - 学术研究（文献调研、问题定位、期刊案例）：`modules/academic_research/`
+  （已实现子模块见上节）
 - 学术写作（规划、起草、修订、审核）：`modules/academic_writing/`
 - 通用写作流水线（预留）：`modules/writing_pipeline/`
 - 评价实现（预留）：`modules/evaluation/`

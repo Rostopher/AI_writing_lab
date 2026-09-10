@@ -54,6 +54,9 @@ not_for: "决策来由（-> DECISIONS），运行方式（-> 仓库 RUNBOOK / RE
 ## 数据 / 接口契约
 
 - `data/`：逐份数据决定是否版本化（大小、许可证、隐私、可复现性）
+- public 仓库数据边界（DEC-007）：逐论文 LLM 调用缓存（`requests/`/`responses/`）与
+  含摘要全文的产物（`corpus_manifest.jsonl`、`dev_set_manifest.jsonl`、
+  `*annotations*.jsonl`）不入库；派生指标、比较 JSON、manifest、报告入库
 - papers 全文来自 playwright_crawler 数据物化，本仓库不重复采集
 - 大文件禁止整载入内存/上下文，默认头预览、抽样、流式处理
 
@@ -65,5 +68,10 @@ not_for: "决策来由（-> DECISIONS），运行方式（-> 仓库 RUNBOOK / RE
 ## 环境规则
 
 - Python：全局共享虚拟环境 `F:/global_venv/.venv/Scripts/python.exe`（项目未设独立 venv）
+- Git 远端：GitHub public `Rostopher/AI_writing_lab`（2026-09-10 建立；推送前检查
+  是否触碰 DEC-007 数据边界）
+- LLM 凭据与上游数据根经环境变量配置，不落代码与文档默认值：
+  `DEEPSEEK_API_KEY`（或 `DEEPSEEK_ENV_FILE` 指定 .env）、
+  `ABSTRACT_STRUCTURE_UPSTREAM_ROOT`（playwright_crawler 数据集）
 - 涉及数据处理/回归/诊断/测试/绘图任务时优先遵循 `research-engineering` skill 约定
 - 本地绝对路径、密钥、token 不提交

@@ -51,16 +51,18 @@ playwright_crawler（期刊数据采集）
 
 ## 技术栈
 
-- 运行时 / 语言：Python（预期；尚未引入工程代码）
+- 运行时 / 语言：Python（全局共享 venv，见 `CONVENTIONS.md` 环境规则）
 - 数据来源：期刊数据来自姊妹仓库 `playwright_crawler`
 - 论文工作区：`paper-workspace` 物化为 `papers/`
 - 记忆系统：`memory-docs/`（vibe-memory-system 三层结构）
+- 版本化：GitHub public `Rostopher/AI_writing_lab`；数据版本化边界见 DEC-007
 
 ## 已有研究材料
 
 2026-09-08 从姊妹仓库 `research/projects/academic_paper_writing/` 迁入写作分层框架、
-参考工具分析、六个参考仓库及评价 proposal。现有研究设计可供学术方向接续，
-尚无标注实验、已验证评价器或业务实现；定位见 `detail_mem/MAP.md`，
+参考工具分析、六个参考仓库及评价 proposal。首个业务实现为
+`modules/academic_research/abstract_structure/` 摘要结构研究管线（2026-09-08 至 09-10，
+两轮付费运行与报告已完成）；评价器仍未验证。定位见 `detail_mem/MAP.md`，
 来源与完整性证据见[迁移档案](archive/20260908_academic_paper_writing_migration/manifest.md)。
 
 ## 关键立场

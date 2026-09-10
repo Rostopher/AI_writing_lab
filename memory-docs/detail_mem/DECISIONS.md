@@ -19,6 +19,7 @@ not_for: "操作规则（-> CONVENTIONS），未定论的讨论（-> SHORT_MEMOR
 | `DEC-004` | `governing` | 期刊案例观察的使用边界 | 论文写作特征是观察，可提假设不可断因果；观察与已验证建议分开记录 | 观察≠因果、写作特征、期刊青睐、模仿表面措辞 | [details](#dec-004) |
 | `DEC-005` | `governing` | 评价实现原则 | 评价先拆可观察维度（套话/空泛/重复总结/机械结构等），区分跨场景与文体偏好 | 摆脱AI味、评价、可观察维度、文体偏好 | [details](#dec-005) |
 | `DEC-006` | `governing` | 记忆系统与脚手架 | memory-docs（vibe-memory-system）作记忆层，research scaffold 提供研究目录；playwright_crawler 继续维护期刊数据 | memory-docs、research scaffold、docs、playwright_crawler | [details](#dec-006) |
+| `DEC-007` | `governing` | public 仓库与数据版本化边界 | 仓库公开于 GitHub；LLM 调用缓存与含摘要全文产物不入库，只入派生层；凭据与私有路径走环境变量 | public 仓库、数据版本化、摘要全文、环境变量、gitignore | [details](#dec-007) |
 | `legacy-apw:DEC-001` | `governing`（学术范围） | 迁入项目的跨层写作边界 | 局部表达服务整篇论证；五层 taxonomy 的具体标签仍待验证，与本仓 DEC-002/003 并存 | academic_paper_writing、跨层、rhetorical move | [原始记录](../archive/20260908_academic_paper_writing_migration/source_project/memory-docs/detail_mem/DECISIONS.md#dec-001) |
 | `legacy-apw:DEC-002` | `governing`（学术范围） | 迁入项目的 validity-first 边界 | 事实与证据保持不能由流畅度抵消；rubric、阈值、schema 仍属 proposal，不改变通用 evaluation 预留状态 | validity、hard negative、rubric pilot | [原始记录](../archive/20260908_academic_paper_writing_migration/source_project/memory-docs/detail_mem/DECISIONS.md#dec-002) |
 
@@ -121,6 +122,29 @@ not_for: "操作规则（-> CONVENTIONS），未定论的讨论（-> SHORT_MEMOR
   避免重复建立 docs 占位体系。
 - 影响：`memory-docs/` 已安装标准文件；`AGENTS.md` 含三层结构指引与仓库特定规则。
 - 证据 / 验证：安装器输出 13 个标准文件并通过校验（2026-09-07，仅 STATUS 日期 warning，已补）。
+- 生命周期：governing
+
+### DEC-007
+
+- 标题：public 仓库与数据版本化边界
+- 日期：2026-09-10
+- 状态：`governing`
+- 背景：项目首次推送 GitHub public（`Rostopher/AI_writing_lab`）。摘要结构运行产物
+  包含付费 API 产出与五刊摘要全文：摘要在期刊网站公开，但把 4250+ 篇全文打包进
+  public 仓库属于批量再分发，有版权投诉风险；代码中曾硬编码本机私有绝对路径
+  （LLMClient/.env、playwright_crawler 数据集）。
+- 决策：① 逐论文 LLM 调用缓存（`requests/`/`responses/`，约 9700 个文件）不入库；
+  ② 含摘要全文的产物（`corpus_manifest.jsonl`、`dev_set_manifest.jsonl`、
+  `*annotations*.jsonl`）经 .gitignore 留本地；③ 派生指标、比较 JSON、样本/运行
+  manifest、报告入库；④ LLM 凭据与上游数据根经环境变量配置
+  （`DEEPSEEK_API_KEY` / `DEEPSEEK_ENV_FILE` / `ABSTRACT_STRUCTURE_UPSTREAM_ROOT`），
+  代码不设私有默认路径。
+- 理由：缓存可再生、全文有再分发风险；派生层已足以支撑报告结论与复核；
+  私有路径公开违反「不提交机器特定配置」约定。
+- 影响：clone 仓库无法直接复算全链路（派生 JSON 的 inputs 引用本地文件）；
+  新数据产物按同一口径逐份决定；推送前检查是否触碰该边界。
+- 证据 / 验证：commit `91bba2f`–`00bf243`（2026-09-10）；.gitignore 规则；
+  环境变量化后 68 个 pytest 全部通过（无环境变量时真实上游 smoke 正确 skip）。
 - 生命周期：governing
 
 ### 2026-09-08 迁入说明
