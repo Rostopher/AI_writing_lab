@@ -1,0 +1,55 @@
+# English AI-slop 词表（基于 OpenAI GPT-6 Astra 官方写作建议）
+# 格式: 匹配串<TAB>类别[<TAB>备注]
+#   - 纯英文单词自动加词边界、忽略大小写
+#   - 含空格的按字面短语匹配
+#   - re: 前缀表示正则表达式
+# 命中只是候选信号，需结合文体判断是否真问题。
+
+# ---- 套话 ----
+delve	套话
+delves	套话
+delved	套话
+delving	套话
+foster	套话
+fostering	套话
+leverage	套话
+leveraging	套话
+genuinely	套话
+importantly	套话
+it's worth noting	套话
+it is worth noting	套话
+worth noting that	套话
+it's important to note	套话
+needless to say	套话
+it goes without saying	套话
+at its core	套话
+at its heart	套话
+a testament to	套话
+delve into	套话
+re:\bplays? a (?:vital|crucial|key|pivotal|significant) role\b	套话
+re:\bserves? as a (?:cornerstone|testament|vital|crucial)	套话
+re:\bnavigat\w* the (?:complexities|landscape|intricacies)	套话
+re:\bthe (?:world|realm|landscape) of\b	套话	AI 常用开场 "the world of X"
+re:\bin (?:today's|the) (?:ever-)?(?:evolving|changing|fast-paced) (?:world|landscape|realm|age)	套话
+
+# ---- 结尾总结 ----
+Bottom Line:	结尾总结
+bottom line:	结尾总结
+In short:	结尾总结
+In summary,	结尾总结
+In conclusion,	结尾总结
+To sum up,	结尾总结
+To summarize,	结尾总结
+the simplest mental model is	结尾总结
+
+# ---- 机械结构 ----
+re:\b(?:this|it|that)'?s? not about\b	对比框架	"This isn't about X. It's about Y."
+re:\b(?:isn't|is not|wasn't|was not) about\b	对比框架
+re:\bnot (?:just|only|merely)\b[^.!?]{1,100}?\bbut\b	对比框架	"not just X, but Y"
+re:—\s*not\s	对比框架	"X—not Y" 引入读者没问的对比
+re:\?\s*(?:because|the answer is|answer:|in short,)	自问自答	"Why? Because ..."
+re:\bmoreover\b	罐头过渡	高频才算问题
+re:\bfurthermore\b	罐头过渡	高频才算问题
+
+# ---- 不必要修饰 ----
+re:\b[A-Za-z]+(?:-[A-Za-z]+){2,}\b	生造复合词	三连及以上连字符，启发式，误报率较高
