@@ -1,0 +1,34 @@
+{
+  "purpose": "v0.3 全量 flash 标注 vs 100 篇独立验证集（flash）的一致性核对",
+  "date": "2026-09-09",
+  "inputs": {
+    "full": "run_20260909_v03_full/annotation_flash/annotations.jsonl + v03_full_derived_deepseek-v4-flash.json",
+    "validation": "run_20260909_v03_validation/annotation_deepseek-v4-flash/annotations.jsonl + v03_derived_deepseek-v4-flash.json"
+  },
+  "distribution_comparison": {
+    "how_present": {
+      "validation": "95/100 = 95.0%",
+      "full": "3722/4250 = 87.6%",
+      "note": "差约 7pp；按全量率作总体真值，validation 100 篇二项偏差 z≈2.2 (p≈0.03)，属小样本抽样波动的边界范围"
+    },
+    "how_present_by_journal_equal_weight": {
+      "validation": 95.0,
+      "full": 88.1,
+      "note": "排除期刊构成影响后差异仍在；排除年份构成（各年份 cell 内 validation 普遍 ≥ full，但 cell n=5-13 均在噪声内）"
+    },
+    "other_metrics": "what/findings/why presence、core3/all4 覆盖、text_share、framework_out 两侧差异均在 1-4pp 内，一致"
+  },
+  "same_article_reproducibility": {
+    "n_common": 100,
+    "how_label_flips": 3,
+    "how_flip_ids": [
+      "AER:10.1257/aer.20181169",
+      "ECMA:10.3982/ecta15383",
+      "QJE:10.1093/qje/qjx023"
+    ],
+    "any_function_label_diff": 15,
+    "note": "temperature=0 下仍有标签级非确定性（how 3%、任意功能 15%），但无方向性系统偏移（翻转双向），不构成持续系统误读证据"
+  },
+  "exclusion_check": "validation 抽样排除的 dev16+pilot100 在全量标注中 how present 81.9%，排除后总体 87.74%，排除规则不能解释分布差",
+  "conclusion": "全量标注与验证集无系统性漂移；how presence 的 7pp 差异主要由 100 篇抽样波动解释。全量派生指标可用于描述性分析。遗留诊断项：如需收紧，可对 15 篇标签不一致案例做人工复核或 pro 对照。"
+}

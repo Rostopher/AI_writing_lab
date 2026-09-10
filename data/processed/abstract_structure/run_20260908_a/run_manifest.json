@@ -1,0 +1,3286 @@
+{
+  "run_id": "run_20260908_a",
+  "started_at": "2026-09-08T13:55:26+00:00",
+  "finished_at": "2026-09-08T13:55:56+00:00",
+  "upstream_root": "F:\\codeF\\llm_projects\\playwright_crawler\\top_journal_dataset",
+  "n_records": 5431,
+  "n_included": 4708,
+  "n_selected": 5431,
+  "availability": {
+    "missing": 1002,
+    "available": 4334,
+    "needs_review": 2,
+    "extraction_error": 93
+  },
+  "per_journal": {
+    "AER": {
+      "n_records": 1485,
+      "n_included": 1285,
+      "n_selected": 1485,
+      "availability": {
+        "missing": 160,
+        "available": 1325
+      }
+    },
+    "ECMA": {
+      "n_records": 1151,
+      "n_included": 795,
+      "n_selected": 1151,
+      "availability": {
+        "available": 763,
+        "missing": 294,
+        "needs_review": 2,
+        "extraction_error": 92
+      }
+    },
+    "JPE": {
+      "n_records": 1241,
+      "n_included": 1122,
+      "n_selected": 1241,
+      "availability": {
+        "available": 798,
+        "missing": 443
+      }
+    },
+    "QJE": {
+      "n_records": 585,
+      "n_included": 569,
+      "n_selected": 585,
+      "availability": {
+        "available": 537,
+        "missing": 48
+      }
+    },
+    "REStud": {
+      "n_records": 969,
+      "n_included": 937,
+      "n_selected": 969,
+      "availability": {
+        "available": 911,
+        "missing": 57,
+        "extraction_error": 1
+      }
+    }
+  },
+  "n_issues_ok": 425,
+  "n_issues_excluded": 4,
+  "n_issues_error": 0,
+  "n_doi_conflict_groups": 0,
+  "versions": {
+    "normalize": "v1",
+    "word_count": "v1",
+    "sentence_splitter": "pysbd 0.3.4"
+  },
+  "journals": [
+    "AER",
+    "ECMA",
+    "JPE",
+    "QJE",
+    "REStud"
+  ],
+  "year_window": [
+    2015,
+    2026
+  ],
+  "excluded_issues": {
+    "AER201505_5": "AER Papers & Proceedings 年会专辑（2015 年 5 月号），整期排除",
+    "AER201605_5": "AER Papers & Proceedings 年会专辑（2016 年 5 月号），整期排除",
+    "AER201705_5": "AER Papers & Proceedings 年会专辑（2017 年 5 月号），整期排除",
+    "AER201804_4-5": "与 AER201804_4 为同一期（Vol 108 No. 4-5 合刊）的重复目录，无 article_metadata.json"
+  },
+  "issue_log": [
+    {
+      "issue_dir": "AER201501_1",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 16,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201502_2",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201503_3",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201504_4",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201505_5",
+      "journal": "AER",
+      "status": "excluded_issue",
+      "reason": "AER Papers & Proceedings 年会专辑（2015 年 5 月号），整期排除"
+    },
+    {
+      "issue_dir": "AER201506_6",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201507_7",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201508_8",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201509_9",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 7,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201510_10",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 9,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201511_11",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201512_12",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 9,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201601_1",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 8,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201602_2",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201603_3",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201604_4",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201605_5",
+      "journal": "AER",
+      "status": "excluded_issue",
+      "reason": "AER Papers & Proceedings 年会专辑（2016 年 5 月号），整期排除"
+    },
+    {
+      "issue_dir": "AER201606_6",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201607_7",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201608_8",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201609_9",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201610_10",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201611_11",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201612_12",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201701_1",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201702_2",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201703_3",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201704_4",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201705_5",
+      "journal": "AER",
+      "status": "excluded_issue",
+      "reason": "AER Papers & Proceedings 年会专辑（2017 年 5 月号），整期排除"
+    },
+    {
+      "issue_dir": "AER201706_6",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201707_7",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201708_8",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201709_9",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201710_10",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 16,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201711_11",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201712_12",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 9,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201801_1",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 7,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201802_2",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201803_3",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 9,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201804_4",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201804_4-5",
+      "journal": "AER",
+      "status": "excluded_issue",
+      "reason": "与 AER201804_4 为同一期（Vol 108 No. 4-5 合刊）的重复目录，无 article_metadata.json"
+    },
+    {
+      "issue_dir": "AER201806_6",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201807_7",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201808_8",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201809_9",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201810_10",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201811_11",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201812_12",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201901_1",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201902_2",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201903_3",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201904_4",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201905_5",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201906_6",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201907_7",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201908_8",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201909_9",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201910_10",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201911_11",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER201912_12",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202001_1",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202002_2",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 9,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202003_3",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202004_4",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202005_5",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202006_6",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202007_7",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202008_8",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202009_9",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202010_10",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202011_11",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202012_12",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202101_1",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202102_2",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202103_3",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 9,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202104_4",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202105_5",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202106_6",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202107_7",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202108_8",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202109_9",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202110_10",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202111_11",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202112_12",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 9,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202201_1",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202202_2",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202203_3",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202204_4",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202205_5",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202206_6",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202207_7",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202208_8",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202209_9",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202210_10",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202211_11",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202212_12",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 9,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202301_1",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 9,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202302_2",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 9,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202303_3",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 9,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202304_4",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 9,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202305_5",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 8,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202306_6",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202307_7",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202308_8",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 8,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202309_9",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 8,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202310_10",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 9,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202311_11",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 9,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202312_12",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 9,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202401_1",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 9,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202402_2",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 9,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202403_3",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 9,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202404_4",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202405_5",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 9,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202406_6",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202407_7",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202408_8",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202409_9",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202410_10",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202411_11",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202412_12",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202501_1",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202502_2",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202503_3",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 9,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202504_4",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 9,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202505_5",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202506_6",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202507_7",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202508_8",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202509_9",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202510_10",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202511_11",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202512_12",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202601_1",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202602_2",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202603_3",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202604_4",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202605_5",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202606_6",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "AER202607_7",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 0,
+      "anomalies": [
+        "missing_issue_file:article_metadata.json"
+      ]
+    },
+    {
+      "issue_dir": "AER202608_8",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 0,
+      "anomalies": [
+        "missing_issue_file:article_metadata.json"
+      ]
+    },
+    {
+      "issue_dir": "AER202609_9",
+      "journal": "AER",
+      "status": "ok",
+      "n_articles": 0,
+      "anomalies": [
+        "missing_issue_file:article_metadata.json"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201501_1",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 29,
+      "anomalies": [
+        "issue_level_duplicates:10"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201503_2",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": [
+        "issue_level_duplicates:11"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201505_3",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 16,
+      "anomalies": [
+        "issue_level_duplicates:10"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201507_4",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 18,
+      "anomalies": [
+        "issue_level_duplicates:11"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201509_5",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": [
+        "issue_level_duplicates:12"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201511_6",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": [
+        "issue_level_duplicates:10"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201601_1",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 18,
+      "anomalies": [
+        "issue_level_duplicates:10"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201603_2",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": [
+        "issue_level_duplicates:12"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201605_3",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": [
+        "issue_level_duplicates:12"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201607_4",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": [
+        "issue_level_duplicates:9"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201609_5",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": [
+        "issue_level_duplicates:10"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201611_6",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": [
+        "issue_level_duplicates:9"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201701_1",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 18,
+      "anomalies": [
+        "issue_level_duplicates:10"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201703_2",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": [
+        "issue_level_duplicates:13"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201705_3",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": [
+        "issue_level_duplicates:12"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201707_4",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": [
+        "issue_level_duplicates:11"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201709_5",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": [
+        "issue_level_duplicates:11"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201711_6",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": [
+        "issue_level_duplicates:11"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201801_1",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 18,
+      "anomalies": [
+        "issue_level_duplicates:10"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201803_2",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": [
+        "issue_level_duplicates:13"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201805_3",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": [
+        "issue_level_duplicates:9"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201807_4",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 17,
+      "anomalies": [
+        "issue_level_duplicates:14"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201809_5",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": [
+        "issue_level_duplicates:12"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201811_6",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": [
+        "issue_level_duplicates:11"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201901_1",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 19,
+      "anomalies": [
+        "issue_level_duplicates:11"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201903_2",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": [
+        "issue_level_duplicates:11"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201905_3",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": [
+        "issue_level_duplicates:9"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201907_4",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": [
+        "issue_level_duplicates:11"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201909_5",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": [
+        "issue_level_duplicates:13"
+      ]
+    },
+    {
+      "issue_dir": "ECMA201911_6",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": [
+        "issue_level_duplicates:10"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202001_1",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 18,
+      "anomalies": [
+        "issue_level_duplicates:10"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202003_2",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": [
+        "issue_level_duplicates:13"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202005_3",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": [
+        "issue_level_duplicates:13"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202007_4",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 23,
+      "anomalies": [
+        "issue_level_duplicates:23"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202009_5",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 17,
+      "anomalies": [
+        "issue_level_duplicates:14"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202011_6",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 21,
+      "anomalies": [
+        "issue_level_duplicates:21"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202101_1",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 25,
+      "anomalies": [
+        "issue_level_duplicates:17"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202103_2",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 19,
+      "anomalies": [
+        "issue_level_duplicates:16"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202105_3",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 19,
+      "anomalies": [
+        "issue_level_duplicates:17"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202107_4",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 23,
+      "anomalies": [
+        "issue_level_duplicates:17"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202109_5",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 19,
+      "anomalies": [
+        "issue_level_duplicates:17"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202111_6",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 17,
+      "anomalies": [
+        "issue_level_duplicates:15"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202201_1",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 24,
+      "anomalies": [
+        "issue_level_duplicates:20"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202203_2",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 17,
+      "anomalies": [
+        "issue_level_duplicates:14"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202205_3",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 18,
+      "anomalies": [
+        "issue_level_duplicates:15"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202207_4",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 22,
+      "anomalies": [
+        "issue_level_duplicates:19"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202209_5",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 20,
+      "anomalies": [
+        "issue_level_duplicates:18"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202211_6",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 17,
+      "anomalies": [
+        "issue_level_duplicates:14"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202301_1",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 19,
+      "anomalies": [
+        "issue_level_duplicates:15"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202303_2",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": [
+        "issue_level_duplicates:12"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202305_3",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 19,
+      "anomalies": [
+        "issue_level_duplicates:13"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202307_4",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": [
+        "issue_level_duplicates:12"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202309_5",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": [
+        "issue_level_duplicates:11"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202311_6",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 23,
+      "anomalies": [
+        "issue_level_duplicates:21"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202401_1",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 18,
+      "anomalies": [
+        "issue_level_duplicates:10"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202403_2",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": [
+        "issue_level_duplicates:10"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202405_3",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 17,
+      "anomalies": [
+        "issue_level_duplicates:19",
+        "missing_article_content:ecta923bm",
+        "missing_article_content:ecta923fm",
+        "missing_article_content:ecta923pres"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202407_4",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 16,
+      "anomalies": [
+        "issue_level_duplicates:16"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202409_5",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 16,
+      "anomalies": [
+        "issue_level_duplicates:13"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202411_6",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": [
+        "issue_level_duplicates:10"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202501_1",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 17,
+      "anomalies": [
+        "issue_level_duplicates:8"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202503_2",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "ECMA202505_3",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "ECMA202507_4",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 18,
+      "anomalies": [
+        "issue_level_duplicates:1"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202509_5",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "ECMA202511_6",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": [
+        "issue_level_duplicates:1"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202601_1",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 16,
+      "anomalies": [
+        "orphan_article_dirs:ecta941eds"
+      ]
+    },
+    {
+      "issue_dir": "ECMA202603_2",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "ECMA202605_3",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 17,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "ECMA202607_4",
+      "journal": "ECMA",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201502_1",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 8,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201504_2",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 9,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201506_3",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 7,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201508_4",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 9,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201510_5",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 9,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201512_6",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 9,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201602_1",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201604_2",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 9,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201606_3",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 9,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201608_4",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201610_5",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201612_6",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201702_1",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201704_2",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201706_3",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201708_4",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201710_5",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201712_6",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 41,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201802_1",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201804_2",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201806_3",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201808_4",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201810_5",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201810_S1",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 8,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201812_6",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 16,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201902_1",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 16,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201904_2",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 16,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201906_3",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 16,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201908_4",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 16,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201910_5",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 17,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE201912_6",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 16,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202001_1",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202002_2",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202003_3",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202004_4",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202005_5",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 16,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202006_6",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202007_7",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202008_8",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202009_9",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202010_10",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202011_11",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202012_12",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202101_1",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202102_2",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202103_3",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202104_4",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202105_5",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202106_6",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202107_7",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202108_8",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202109_9",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202110_10",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202111_11",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202112_12",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202201_1",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202202_2",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202203_3",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202204_4",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202205_5",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202206_6",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202207_7",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202208_8",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202209_9",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202210_10",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202211_11",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202212_12",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202301_1",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202302_2",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202303_3",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202304_4",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202305_5",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202306_6",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 9,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202307_7",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202308_8",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202309_9",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202310_10",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202311_11",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202312_12",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202401_1",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202402_2",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202403_3",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202404_4",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202405_5",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202406_6",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202407_7",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202408_8",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202409_9",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202410_10",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202411_11",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202412_12",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202501_1",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202502_2",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202503_3",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202504_4",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202505_5",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202506_6",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202507_7",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202508_8",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202509_9",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202510_10",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202511_11",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202512_12",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202601_1",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202602_2",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202603_3",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 8,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202604_4",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 8,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "JPE202605_5",
+      "journal": "JPE",
+      "status": "ok",
+      "n_articles": 9,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE201502_1",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE201505_2",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE201508_3",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE201511_4",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE201602_1",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE201605_2",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE201608_3",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE201611_4",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE201702_1",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE201705_2",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE201708_3",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE201711_4",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE201802_1",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE201805_2",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE201808_3",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE201811_4",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE201902_1",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE201905_2",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE201908_3",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE201911_4",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE202002_1",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE202005_2",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE202008_3",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE202011_4",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 10,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE202102_1",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE202105_2",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE202108_3",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE202111_4",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE202202_1",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE202205_2",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE202208_3",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE202211_4",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE202302_1",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE202305_2",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE202308_3",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE202311_4",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE202402_1",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE202405_2",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE202408_3",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE202411_4",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE202502_1",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE202505_2",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 16,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE202508_3",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE202511_4",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE202602_1",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE202605_2",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 16,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "QJE202608_3",
+      "journal": "QJE",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud201501_1",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud201504_2",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud201507_3",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 11,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud201510_4",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud201601_1",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud201604_2",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud201607_3",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud201610_4",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud201701_1",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud201704_2",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud201707_3",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud201710_4",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 16,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud201801_1",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 18,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud201804_2",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 18,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud201807_3",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 16,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud201810_4",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud201901_1",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud201903_2",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud201905_3",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud201907_4",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud201910_5",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud201911_6",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202001_1",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202003_2",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202005_3",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202007_4",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 12,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202010_5",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 13,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202011_6",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202101_1",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202103_2",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 14,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202105_3",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202107_4",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202110_5",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 17,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202111_6",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 16,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202201_1",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 16,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202203_2",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 17,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202205_3",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202207_4",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202210_5",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202211_6",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202301_1",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202303_2",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 16,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202305_3",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 15,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202307_4",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 17,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202310_5",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 17,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202311_6",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 17,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202401_1",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 19,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202403_2",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 17,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202405_3",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 16,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202407_4",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 20,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202409_5",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 20,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202410_5",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 18,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202411_6",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 18,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202501_1",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 18,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202503_2",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 18,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202505_3",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 20,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202507_4",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 20,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202510_5",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 20,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202511_6",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 21,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202601_1",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 20,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202603_2",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 20,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202605_3",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 21,
+      "anomalies": []
+    },
+    {
+      "issue_dir": "REStud202607_4",
+      "journal": "REStud",
+      "status": "ok",
+      "n_articles": 0,
+      "anomalies": []
+    }
+  ],
+  "annotation_runs": {
+    "prompt": {
+      "path": "ideas/abstract_structure_annotation_prompt.md",
+      "version": "v0.2 (2026-09-08 冻结)",
+      "sha256": "c29f09b3c064cd594e8a391987fba85f6f050abe7c73079a9cb1477f583d8bc5",
+      "schema_version": "abstract_structure_v0.1"
+    },
+    "models": [
+      "deepseek-v4-flash",
+      "deepseek-v4-pro"
+    ],
+    "params": {
+      "temperature": 0,
+      "max_tokens": 32768,
+      "response_format": "json_object",
+      "base_url": "https://api.deepseek.com"
+    },
+    "dev_rounds": [
+      {
+        "round": "v0.1",
+        "n": 16,
+        "note": "发现 why 过标(fp=5)、how 漏标设定句、connective_only 边界，促成 prompt v0.2"
+      },
+      {
+        "round": "v0.2",
+        "n": 16,
+        "cost_cny": {
+          "deepseek-v4-flash": 0.338,
+          "deepseek-v4-pro": 0.5438
+        },
+        "note": "why fp 降至 2，how R=0.96；据此冻结 prompt"
+      }
+    ],
+    "pilot": {
+      "sample": "pilot_sample_manifest.jsonl（100 篇，每刊 20，分层随机 seed=20260908，年份窗口 2015-2026）",
+      "results": {
+        "deepseek-v4-flash": {
+          "n_success": 100,
+          "n_initial": 97,
+          "n_repaired": 3,
+          "n_failed": 0,
+          "cost_cny": 2.0654
+        },
+        "deepseek-v4-pro": {
+          "n_success": 100,
+          "n_initial": 99,
+          "n_repaired": 1,
+          "n_failed": 0,
+          "cost_cny": 4.0694
+        }
+      },
+      "review_subset": "pilot_review_subset.jsonl（25 篇，pilot 内部抽样）；review_agent_annotations.jsonl 为 agent 初步核验（非 human gold）",
+      "total_cost_cny": 7.02,
+      "note": "费用为 dev v0.2 两轮与 pilot 之和（另 dev v0.1 约 ¥0.9）；修复数为运行控制台记录"
+    },
+    "rules_audit": "本轮未运行（设计允许留待后续）"
+  }
+}

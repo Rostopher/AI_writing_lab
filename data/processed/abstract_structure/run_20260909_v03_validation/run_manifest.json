@@ -1,0 +1,40 @@
+{
+  "run_id": "run_20260909_v03_validation",
+  "purpose": "prompt v0.3 独立验证样本（设计 v0.3：排除 dev 16 + v0.2 pilot 100）",
+  "prompt": {
+    "path": "ideas/abstract_structure_annotation_prompt.md",
+    "version": "v0.3",
+    "sha256": "ba3e8e60296f21190c4e0c3e39e58cfb7561952b60b1f2c9fe5215bbc0987c7c"
+  },
+  "sample": "validation_sample_manifest.jsonl（100 篇，每刊 20，seed=20260909，排除 v0.2 开发与 pilot 样本）",
+  "corpus": "run_20260908_a/corpus_manifest.jsonl（同一语料台账）",
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "response_format": "json_object",
+    "concurrency": 6
+  },
+  "results": {
+    "deepseek-v4-flash": {
+      "n_success": 100,
+      "n_initial": 99,
+      "n_repaired": 1,
+      "n_failed": 0,
+      "cost_cny": 2.3526,
+      "window": "2026-09-09T03:26:34Z..03:52:23Z"
+    },
+    "deepseek-v4-pro": {
+      "n_success": 100,
+      "n_initial": 100,
+      "n_repaired": 0,
+      "n_failed": 0,
+      "cost_cny": 4.0134,
+      "window": "2026-09-09T03:52:24Z..04:22:00Z"
+    }
+  },
+  "artifacts": [
+    "annotation_<model>/annotations.jsonl",
+    "v03_derived_<model>.json",
+    "compare_v03_flash_vs_pro.json"
+  ]
+}

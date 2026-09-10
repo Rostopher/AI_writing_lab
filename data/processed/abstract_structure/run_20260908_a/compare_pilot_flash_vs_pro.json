@@ -1,0 +1,659 @@
+{
+  "n_articles_compared": 100,
+  "exact_label_set_rate": 0.29,
+  "macro_f1": 0.8762219009837093,
+  "per_function": {
+    "what": {
+      "tp": 95,
+      "fp": 17,
+      "fn": 4,
+      "precision": 0.8482142857142857,
+      "recall": 0.9595959595959596,
+      "f1": 0.900473933649289
+    },
+    "how": {
+      "tp": 189,
+      "fp": 66,
+      "fn": 13,
+      "precision": 0.7411764705882353,
+      "recall": 0.9356435643564357,
+      "f1": 0.8271334792122539
+    },
+    "findings": {
+      "tp": 296,
+      "fp": 9,
+      "fn": 8,
+      "precision": 0.9704918032786886,
+      "recall": 0.9736842105263158,
+      "f1": 0.9720853858784894
+    },
+    "why_it_matters": {
+      "tp": 31,
+      "fp": 6,
+      "fn": 9,
+      "precision": 0.8378378378378378,
+      "recall": 0.775,
+      "f1": 0.8051948051948051
+    }
+  },
+  "paper_type_agreement": 0.95,
+  "component_agreement": {
+    "empirical_component": 0.97,
+    "theory_component": 0.95,
+    "structural_component": 0.88
+  },
+  "other_sentence_crosstab": {
+    "both": 47,
+    "ref_only": 12,
+    "pred_only": 7,
+    "neither": 512
+  },
+  "uncertain_sentence_crosstab": {
+    "both": 0,
+    "ref_only": 1,
+    "pred_only": 1,
+    "neither": 576
+  },
+  "per_article": [
+    {
+      "article_id": "ECMA:10.3982/ecta15873",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "ECMA:10.3982/ecta18355",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "QJE:10.1093/qje/qjae046",
+      "exact_label_set": false,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "REStud:10.1093/restud/rdac058",
+      "exact_label_set": false,
+      "ref_type": "methods",
+      "pred_type": "methods"
+    },
+    {
+      "article_id": "JPE:10.1086/728453",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "QJE:10.1093/qje/qjaa026",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "REStud:10.1093/restud/rdaa073",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "AER:10.1257/aer.20181478",
+      "exact_label_set": true,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "AER:10.1257/aer.20230330",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "ECMA:10.3982/ecta17433",
+      "exact_label_set": false,
+      "ref_type": "mixed_or_structural",
+      "pred_type": "mixed_or_structural"
+    },
+    {
+      "article_id": "AER:10.1257/aer.20240554",
+      "exact_label_set": false,
+      "ref_type": "mixed_or_structural",
+      "pred_type": "mixed_or_structural"
+    },
+    {
+      "article_id": "QJE:10.1093/qje/qjab023",
+      "exact_label_set": false,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "QJE:10.1093/qje/qjad051",
+      "exact_label_set": false,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "ECMA:10.3982/ecta17215",
+      "exact_label_set": false,
+      "ref_type": "methods",
+      "pred_type": "methods"
+    },
+    {
+      "article_id": "REStud:10.1093/restud/rdw038",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "QJE:10.1093/qje/qjv010",
+      "exact_label_set": false,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "JPE:10.1086/713097",
+      "exact_label_set": true,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "AER:10.1257/aer.20140705",
+      "exact_label_set": true,
+      "ref_type": "mixed_or_structural",
+      "pred_type": "mixed_or_structural"
+    },
+    {
+      "article_id": "ECMA:10.3982/ecta12618",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "REStud:10.1093/restud/rdy045",
+      "exact_label_set": false,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "ECMA:10.3982/ecta17344",
+      "exact_label_set": false,
+      "ref_type": "mixed_or_structural",
+      "pred_type": "mixed_or_structural"
+    },
+    {
+      "article_id": "JPE:10.1086/688850",
+      "exact_label_set": false,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "REStud:10.1093/restud/rdab070",
+      "exact_label_set": false,
+      "ref_type": "mixed_or_structural",
+      "pred_type": "mixed_or_structural"
+    },
+    {
+      "article_id": "REStud:10.1093/restud/rdab045",
+      "exact_label_set": true,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "AER:10.1257/aer.20211509",
+      "exact_label_set": true,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "ECMA:10.3982/ecta20404",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "ECMA:10.3982/ecta14518",
+      "exact_label_set": true,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "ECMA:10.3982/ecta13971",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "REStud:10.1093/restud/rdae041",
+      "exact_label_set": false,
+      "ref_type": "methods",
+      "pred_type": "methods"
+    },
+    {
+      "article_id": "QJE:10.1093/qje/qjaf055",
+      "exact_label_set": false,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "ECMA:10.3982/ecta14468",
+      "exact_label_set": false,
+      "ref_type": "methods",
+      "pred_type": "methods"
+    },
+    {
+      "article_id": "JPE:10.1086/712786",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "JPE:10.1086/685475",
+      "exact_label_set": true,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "QJE:10.1093/qje/qjae007",
+      "exact_label_set": true,
+      "ref_type": "empirical",
+      "pred_type": "methods"
+    },
+    {
+      "article_id": "QJE:10.1093/qje/qjac006",
+      "exact_label_set": false,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "QJE:10.1093/qje/qjx020",
+      "exact_label_set": false,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "ECMA:10.3982/ecta12701",
+      "exact_label_set": false,
+      "ref_type": "methods",
+      "pred_type": "methods"
+    },
+    {
+      "article_id": "REStud:10.1093/restud/rdab096",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "ECMA:10.3982/ecta17051",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "QJE:10.1093/qje/qjad042",
+      "exact_label_set": false,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "AER:10.1257/aer.20131664",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "REStud:10.1093/restud/rdv007",
+      "exact_label_set": false,
+      "ref_type": "methods",
+      "pred_type": "methods"
+    },
+    {
+      "article_id": "JPE:10.1086/684582",
+      "exact_label_set": true,
+      "ref_type": "mixed_or_structural",
+      "pred_type": "mixed_or_structural"
+    },
+    {
+      "article_id": "JPE:10.1086/734132",
+      "exact_label_set": false,
+      "ref_type": "mixed_or_structural",
+      "pred_type": "mixed_or_structural"
+    },
+    {
+      "article_id": "ECMA:10.3982/ecta10886",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "JPE:10.1086/689773",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "QJE:10.1093/qje/qjac029",
+      "exact_label_set": false,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "JPE:10.1086/699018",
+      "exact_label_set": false,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "JPE:10.1086/686034",
+      "exact_label_set": false,
+      "ref_type": "mixed_or_structural",
+      "pred_type": "mixed_or_structural"
+    },
+    {
+      "article_id": "QJE:10.1093/qje/qjv036",
+      "exact_label_set": false,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "QJE:10.1093/qje/qjw002",
+      "exact_label_set": true,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "AER:10.1257/aer.20221605",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "JPE:10.1086/711348",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "AER:10.1257/aer.20210369",
+      "exact_label_set": false,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "AER:10.1257/aer.20191136",
+      "exact_label_set": true,
+      "ref_type": "mixed_or_structural",
+      "pred_type": "mixed_or_structural"
+    },
+    {
+      "article_id": "REStud:10.1093/restud/rdy023",
+      "exact_label_set": false,
+      "ref_type": "mixed_or_structural",
+      "pred_type": "mixed_or_structural"
+    },
+    {
+      "article_id": "AER:10.1257/aer.20171400",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "AER:10.1257/aer.20231278",
+      "exact_label_set": false,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "REStud:10.1093/restud/rdv013",
+      "exact_label_set": true,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "AER:10.1257/aer.20231133",
+      "exact_label_set": true,
+      "ref_type": "mixed_or_structural",
+      "pred_type": "mixed_or_structural"
+    },
+    {
+      "article_id": "QJE:10.1093/qje/qjy028",
+      "exact_label_set": true,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "ECMA:10.3982/ecta10946",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "JPE:10.1086/711917",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "REStud:10.1093/restud/rdu029",
+      "exact_label_set": true,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "AER:10.1257/aer.20121656",
+      "exact_label_set": true,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "ECMA:10.3982/ecta21045",
+      "exact_label_set": true,
+      "ref_type": "theory",
+      "pred_type": "methods"
+    },
+    {
+      "article_id": "JPE:10.1086/697742",
+      "exact_label_set": true,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "JPE:10.1086/686746",
+      "exact_label_set": false,
+      "ref_type": "mixed_or_structural",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "REStud:10.1093/restud/rdy060",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "ECMA:10.3982/ecta17017",
+      "exact_label_set": false,
+      "ref_type": "mixed_or_structural",
+      "pred_type": "mixed_or_structural"
+    },
+    {
+      "article_id": "JPE:10.1086/734870",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "AER:10.1257/aer.20151413",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "methods"
+    },
+    {
+      "article_id": "JPE:10.1086/728745",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "REStud:10.1093/restud/rdx018",
+      "exact_label_set": false,
+      "ref_type": "mixed_or_structural",
+      "pred_type": "mixed_or_structural"
+    },
+    {
+      "article_id": "JPE:10.1086/730550",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "ECMA:10.3982/ecta18312",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "REStud:10.1093/restud/rdy008",
+      "exact_label_set": false,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "REStud:10.1093/restud/rdae077",
+      "exact_label_set": true,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "QJE:10.1093/qje/qjx026",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "AER:10.1257/aer.20151604",
+      "exact_label_set": true,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "AER:10.1257/aer.20180976",
+      "exact_label_set": true,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "AER:10.1257/aer.20150343",
+      "exact_label_set": true,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "REStud:10.1093/restud/rdac050",
+      "exact_label_set": false,
+      "ref_type": "mixed_or_structural",
+      "pred_type": "mixed_or_structural"
+    },
+    {
+      "article_id": "ECMA:10.3982/ecta17945",
+      "exact_label_set": false,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "AER:10.1257/aer.20201867",
+      "exact_label_set": true,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "ECMA:10.3982/ecta16382",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "QJE:10.1093/qje/qjw042",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "JPE:10.1086/705415",
+      "exact_label_set": false,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "JPE:10.1086/701029",
+      "exact_label_set": true,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "QJE:10.1093/qje/qjaa020",
+      "exact_label_set": false,
+      "ref_type": "mixed_or_structural",
+      "pred_type": "mixed_or_structural"
+    },
+    {
+      "article_id": "QJE:10.1093/qje/qjy003",
+      "exact_label_set": false,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "REStud:10.1093/restud/rdv023",
+      "exact_label_set": true,
+      "ref_type": "mixed_or_structural",
+      "pred_type": "mixed_or_structural"
+    },
+    {
+      "article_id": "QJE:10.1093/qje/qjab013",
+      "exact_label_set": true,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "AER:10.1257/aer.20151052",
+      "exact_label_set": true,
+      "ref_type": "mixed_or_structural",
+      "pred_type": "mixed_or_structural"
+    },
+    {
+      "article_id": "REStud:10.1093/restud/rdaa051",
+      "exact_label_set": true,
+      "ref_type": "theory",
+      "pred_type": "theory"
+    },
+    {
+      "article_id": "QJE:10.1093/qje/qjab026",
+      "exact_label_set": false,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "ECMA:10.3982/ecta17876",
+      "exact_label_set": false,
+      "ref_type": "mixed_or_structural",
+      "pred_type": "mixed_or_structural"
+    },
+    {
+      "article_id": "JPE:10.1086/703989",
+      "exact_label_set": false,
+      "ref_type": "theory",
+      "pred_type": "unclear"
+    },
+    {
+      "article_id": "AER:10.1257/aer.20180496",
+      "exact_label_set": false,
+      "ref_type": "empirical",
+      "pred_type": "empirical"
+    },
+    {
+      "article_id": "REStud:10.1093/restud/rdw003",
+      "exact_label_set": true,
+      "ref_type": "methods",
+      "pred_type": "methods"
+    }
+  ]
+}

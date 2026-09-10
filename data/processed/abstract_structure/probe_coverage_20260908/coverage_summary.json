@@ -1,0 +1,68 @@
+{
+  "year_window": [
+    2015,
+    2026
+  ],
+  "journals": {
+    "AER": {
+      "n_issues": 141,
+      "n_issues_missing_metadata": 4,
+      "n_issues_excluded_whole": 4,
+      "n_articles_total": 1924,
+      "n_front_matter": 132,
+      "n_excluded_type": 639,
+      "n_with_abstract": 1325,
+      "n_missing_abstract": 160
+    },
+    "ECMA": {
+      "n_issues": 70,
+      "n_issues_missing_metadata": 0,
+      "n_issues_excluded_whole": 0,
+      "n_articles_total": 1151,
+      "n_front_matter": 0,
+      "n_excluded_type": 356,
+      "n_with_abstract": 765,
+      "n_missing_abstract": 386
+    },
+    "JPE": {
+      "n_issues": 108,
+      "n_issues_missing_metadata": 0,
+      "n_issues_excluded_whole": 0,
+      "n_articles_total": 1241,
+      "n_front_matter": 0,
+      "n_excluded_type": 119,
+      "n_with_abstract": 798,
+      "n_missing_abstract": 443
+    },
+    "QJE": {
+      "n_issues": 47,
+      "n_issues_missing_metadata": 0,
+      "n_issues_excluded_whole": 0,
+      "n_articles_total": 585,
+      "n_front_matter": 0,
+      "n_excluded_type": 16,
+      "n_with_abstract": 537,
+      "n_missing_abstract": 48
+    },
+    "REStud": {
+      "n_issues": 63,
+      "n_issues_missing_metadata": 0,
+      "n_issues_excluded_whole": 0,
+      "n_articles_total": 969,
+      "n_front_matter": 0,
+      "n_excluded_type": 32,
+      "n_with_abstract": 911,
+      "n_missing_abstract": 58
+    }
+  },
+  "total": {
+    "n_issues": 429,
+    "n_issues_missing_metadata": 4,
+    "n_issues_excluded_whole": 4,
+    "n_articles_total": 5870,
+    "n_front_matter": 132,
+    "n_excluded_type": 1162,
+    "n_with_abstract": 4336,
+    "n_missing_abstract": 1095
+  }
+}

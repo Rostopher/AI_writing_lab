@@ -1,0 +1,33 @@
+{
+  "run_id": "run_20260909_v03_full",
+  "purpose": "prompt v0.3 全量语料标注（设计 v0.3 阶段 D 之后：全量已有语料描述，非抽样推断）",
+  "prompt": {
+    "path": "ideas/abstract_structure_annotation_prompt.md",
+    "version": "v0.3",
+    "sha256": "ba3e8e60296f21190c4e0c3e39e58cfb7561952b60b1f2c9fe5215bbc0987c7c"
+  },
+  "sample": "full_sample_manifest.jsonl（4250 篇，全量合规语料；sha256 fd9a281db9ce1b7c5c05261112d5054447bb03a7e11cdc20dc67c253c6d92128）",
+  "corpus": "run_20260908_a/corpus_manifest.jsonl（同一语料台账）",
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "response_format": "json_object",
+    "concurrency": "unknown（主批次并发数未记录；2026-09-09 19:53 补跑为 1）"
+  },
+  "results": {
+    "deepseek-v4-flash": {
+      "n_success": 4250,
+      "n_initial": 4192,
+      "n_repaired": 58,
+      "n_failed": 0,
+      "cost_cny": 96.0817,
+      "window": "2026-09-09T12:35:48+08:00..2026-09-09T19:54:55+08:00",
+      "note": "主批次窗口约 12:35–18:50；ECMA:10.3982/ecta17016 初次验证失败（quote 非精确子串），删除其 repair 缓存后于 19:53 补跑修复成功。failures.jsonl 中该条为历史记录，当前无未覆盖样本。"
+    }
+  },
+  "artifacts": [
+    "annotation_flash/annotations.jsonl",
+    "annotation_flash/failures.jsonl（含 1 条已补跑成功的历史记录）",
+    "v03_full_derived_deepseek-v4-flash.json"
+  ]
+}
