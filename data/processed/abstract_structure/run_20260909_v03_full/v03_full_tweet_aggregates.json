@@ -1,0 +1,2484 @@
+{
+ "meta": {
+  "generated_by": "modules/academic_research/abstract_structure/build_tweet_aggregates.py",
+  "sample": "run_20260909_v03_full/full_sample_manifest.jsonl（4250 篇，五刊 2015–2026 全量合规语料）",
+  "annotation_model": "deepseek-v4-flash（prompt v0.3，temperature=0）",
+  "journals": [
+   "AER",
+   "JPE",
+   "ECMA",
+   "REStud",
+   "QJE"
+  ],
+  "encoding_note": {
+   "what": "W",
+   "how": "H",
+   "findings": "F",
+   "why_it_matters": "Y",
+   "O": "无功能但有 other_content",
+   "U": "仅 uncertain",
+   "C": "connective_only",
+   "-": "全空"
+  },
+  "n_articles": 4250
+ },
+ "word_count": {
+  "overall": {
+   "n": 4250,
+   "mean": 124.44,
+   "median": 106.0,
+   "p25": 99.0,
+   "p75": 146.0,
+   "p95": 203.5,
+   "pct_le100": 36.6,
+   "pct_101_150": 41.9,
+   "pct_gt150": 21.5
+  },
+  "hist": {
+   "bin_edges": [
+    "0-19",
+    "20-39",
+    "40-59",
+    "60-79",
+    "80-99",
+    "100-119",
+    "120-139",
+    "140-159",
+    "160-179",
+    "180-199",
+    "200-219",
+    "220-239",
+    "240-259",
+    "260-279",
+    "280-299",
+    "300-319",
+    "300+"
+   ],
+   "counts": [
+    0,
+    6,
+    11,
+    107,
+    1053,
+    1370,
+    472,
+    521,
+    281,
+    193,
+    100,
+    66,
+    42,
+    14,
+    4,
+    2,
+    8
+   ]
+  },
+  "by_journal": {
+   "AER": {
+    "n": 1262,
+    "mean": 102.44,
+    "median": 100.0,
+    "p25": 97.0,
+    "p75": 102.0,
+    "p95": 133.0,
+    "pct_le100": 61.3,
+    "pct_101_150": 35.7,
+    "pct_gt150": 2.9
+   },
+   "JPE": {
+    "n": 798,
+    "mean": 99.43,
+    "median": 100.0,
+    "p25": 97.0,
+    "p75": 102.0,
+    "p95": 112.0,
+    "pct_le100": 62.3,
+    "pct_101_150": 37.3,
+    "pct_gt150": 0.4
+   },
+   "ECMA": {
+    "n": 743,
+    "mean": 137.27,
+    "median": 136.0,
+    "p25": 109.0,
+    "p75": 156.0,
+    "p95": 215.0,
+    "pct_le100": 19.0,
+    "pct_101_150": 50.7,
+    "pct_gt150": 30.3
+   },
+   "REStud": {
+    "n": 910,
+    "mean": 142.76,
+    "median": 140.5,
+    "p25": 115.0,
+    "p75": 162.8,
+    "p95": 210.1,
+    "pct_le100": 12.7,
+    "pct_101_150": 51.0,
+    "pct_gt150": 36.3
+   },
+   "QJE": {
+    "n": 537,
+    "mean": 164.53,
+    "median": 160.0,
+    "p25": 133.0,
+    "p75": 193.0,
+    "p95": 243.2,
+    "pct_le100": 5.0,
+    "pct_101_150": 35.6,
+    "pct_gt150": 59.4
+   }
+  }
+ },
+ "sentence_count": {
+  "overall": {
+   "n": 4250,
+   "mean": 5.78,
+   "median": 5.0,
+   "p25": 5.0,
+   "p75": 7.0,
+   "p95": 9.0,
+   "dist_pct": {
+    "1": 0.0,
+    "2": 0.7,
+    "3": 5.1,
+    "4": 19.0,
+    "5": 26.1,
+    "6": 20.4,
+    "7": 13.3,
+    "8": 7.5,
+    "9": 3.9,
+    "10": 1.8,
+    "11": 1.1,
+    "12": 0.5,
+    "13": 0.3,
+    "14": 0.1,
+    "16": 0.0,
+    "17": 0.0,
+    "18": 0.0,
+    "19": 0.0
+   }
+  },
+  "by_journal": {
+   "AER": {
+    "n": 1262,
+    "mean": 5.12,
+    "median": 5.0,
+    "p25": 4.0,
+    "p75": 6.0,
+    "p95": 7.0,
+    "dist_pct": {
+     "1": 0.1,
+     "2": 0.6,
+     "3": 7.1,
+     "4": 26.3,
+     "5": 32.4,
+     "6": 19.7,
+     "7": 9.4,
+     "8": 2.9,
+     "9": 1.2,
+     "10": 0.2,
+     "11": 0.2,
+     "18": 0.1
+    }
+   },
+   "JPE": {
+    "n": 798,
+    "mean": 4.89,
+    "median": 5.0,
+    "p25": 4.0,
+    "p75": 6.0,
+    "p95": 7.0,
+    "dist_pct": {
+     "1": 0.1,
+     "2": 0.6,
+     "3": 8.4,
+     "4": 27.6,
+     "5": 37.3,
+     "6": 17.4,
+     "7": 7.0,
+     "8": 1.4,
+     "9": 0.1
+    }
+   },
+   "ECMA": {
+    "n": 743,
+    "mean": 6.21,
+    "median": 6.0,
+    "p25": 5.0,
+    "p75": 7.0,
+    "p95": 9.0,
+    "dist_pct": {
+     "2": 1.2,
+     "3": 3.9,
+     "4": 13.1,
+     "5": 21.7,
+     "6": 21.8,
+     "7": 15.2,
+     "8": 9.8,
+     "9": 8.6,
+     "10": 2.0,
+     "11": 1.5,
+     "12": 0.7,
+     "13": 0.1,
+     "14": 0.1,
+     "16": 0.1,
+     "17": 0.1
+    }
+   },
+   "REStud": {
+    "n": 910,
+    "mean": 6.29,
+    "median": 6.0,
+    "p25": 5.0,
+    "p75": 7.0,
+    "p95": 10.0,
+    "dist_pct": {
+     "2": 0.9,
+     "3": 2.7,
+     "4": 13.7,
+     "5": 18.1,
+     "6": 23.1,
+     "7": 18.4,
+     "8": 13.2,
+     "9": 4.3,
+     "10": 2.6,
+     "11": 1.5,
+     "12": 0.7,
+     "13": 0.4,
+     "14": 0.1,
+     "17": 0.1,
+     "19": 0.1
+    }
+   },
+   "QJE": {
+    "n": 537,
+    "mean": 7.21,
+    "median": 7.0,
+    "p25": 6.0,
+    "p75": 8.0,
+    "p95": 11.0,
+    "dist_pct": {
+     "3": 0.9,
+     "4": 6.0,
+     "5": 14.5,
+     "6": 19.9,
+     "7": 20.5,
+     "8": 14.5,
+     "9": 8.9,
+     "10": 6.9,
+     "11": 3.5,
+     "12": 2.0,
+     "13": 1.7,
+     "14": 0.4,
+     "16": 0.2
+    }
+   }
+  }
+ },
+ "function_coverage": {
+  "presence_pct": {
+   "what": 76.7,
+   "how": 87.6,
+   "findings": 98.2,
+   "why_it_matters": 25.5,
+   "what_inclusive": 99.6
+  },
+  "coverage_pct": {
+   "core3_narrow": 66.9,
+   "core3_inclusive": 85.9,
+   "all4_narrow": 16.0,
+   "all4_inclusive": 21.1
+  },
+  "core3_narrow_by_journal": {
+   "AER": 63.7,
+   "JPE": 62.7,
+   "ECMA": 65.8,
+   "REStud": 70.8,
+   "QJE": 75.6
+  },
+  "by_type": {
+   "empirical": {
+    "n": 1471,
+    "core3_narrow": 73.8,
+    "how_present": 90.5
+   },
+   "methods": {
+    "n": 399,
+    "core3_narrow": 65.4,
+    "how_present": 86.0
+   },
+   "mixed_or_structural": {
+    "n": 1080,
+    "core3_narrow": 74.4,
+    "how_present": 98.5
+   },
+   "theory": {
+    "n": 1247,
+    "core3_narrow": 55.0,
+    "how_present": 78.2
+   },
+   "unclear": {
+    "n": 53,
+    "core3_narrow": 13.2,
+    "how_present": 17.0
+   }
+  },
+  "note": "narrow = 句子主标签口径；inclusive 含次要标签。数字与全量报告 §3 一致。"
+ },
+ "text_share_pct": {
+  "what": 12.5,
+  "how": 21.4,
+  "findings": 49.4,
+  "why_it_matters": 4.0,
+  "core_union": 85.8,
+  "other": 10.1
+ },
+ "position_function": {
+  "source": "v03_full_positional_deepseek-v4-flash.json",
+  "matrix_all": [
+   {
+    "position": 1,
+    "n_articles_reaching": 4250,
+    "share_reaching": 100.0,
+    "pct_with_function": {
+     "what": 53.8,
+     "how": 28.9,
+     "findings": 9.4,
+     "why_it_matters": 0.2
+    },
+    "pct_multi_label": 20.2,
+    "pct_no_function": 28.1,
+    "pct_other_content": 30.6,
+    "pct_connective_only": 0.0,
+    "top_label_sets": [
+     {
+      "set": "W",
+      "pct": 35.9
+     },
+     {
+      "set": "none",
+      "pct": 28.1
+     },
+     {
+      "set": "WH",
+      "pct": 17.3
+     },
+     {
+      "set": "H",
+      "pct": 9.2
+     },
+     {
+      "set": "F",
+      "pct": 6.6
+     },
+     {
+      "set": "HF",
+      "pct": 2.1
+     }
+    ]
+   },
+   {
+    "position": 2,
+    "n_articles_reaching": 4248,
+    "share_reaching": 100.0,
+    "pct_with_function": {
+     "what": 17.0,
+     "how": 46.1,
+     "findings": 35.9,
+     "why_it_matters": 0.8
+    },
+    "pct_multi_label": 17.6,
+    "pct_no_function": 18.1,
+    "pct_other_content": 20.4,
+    "pct_connective_only": 0.7,
+    "top_label_sets": [
+     {
+      "set": "H",
+      "pct": 29.2
+     },
+     {
+      "set": "F",
+      "pct": 25.6
+     },
+     {
+      "set": "none",
+      "pct": 18.1
+     },
+     {
+      "set": "HF",
+      "pct": 9.3
+     },
+     {
+      "set": "W",
+      "pct": 9.2
+     },
+     {
+      "set": "WH",
+      "pct": 7.3
+     }
+    ]
+   },
+   {
+    "position": 3,
+    "n_articles_reaching": 4219,
+    "share_reaching": 99.3,
+    "pct_with_function": {
+     "what": 10.5,
+     "how": 36.7,
+     "findings": 59.2,
+     "why_it_matters": 2.2
+    },
+    "pct_multi_label": 16.4,
+    "pct_no_function": 8.0,
+    "pct_other_content": 8.9,
+    "pct_connective_only": 0.9,
+    "top_label_sets": [
+     {
+      "set": "F",
+      "pct": 47.5
+     },
+     {
+      "set": "H",
+      "pct": 21.5
+     },
+     {
+      "set": "HF",
+      "pct": 10.3
+     },
+     {
+      "set": "none",
+      "pct": 8.0
+     },
+     {
+      "set": "W",
+      "pct": 5.3
+     },
+     {
+      "set": "WH",
+      "pct": 4.6
+     }
+    ]
+   },
+   {
+    "position": 4,
+    "n_articles_reaching": 4004,
+    "share_reaching": 94.2,
+    "pct_with_function": {
+     "what": 7.1,
+     "how": 25.8,
+     "findings": 71.4,
+     "why_it_matters": 5.8
+    },
+    "pct_multi_label": 14.8,
+    "pct_no_function": 5.0,
+    "pct_other_content": 4.9,
+    "pct_connective_only": 1.6,
+    "top_label_sets": [
+     {
+      "set": "F",
+      "pct": 59.4
+     },
+     {
+      "set": "H",
+      "pct": 13.8
+     },
+     {
+      "set": "HF",
+      "pct": 8.8
+     },
+     {
+      "set": "none",
+      "pct": 5.0
+     },
+     {
+      "set": "W",
+      "pct": 3.5
+     },
+     {
+      "set": "Y",
+      "pct": 3.3
+     }
+    ]
+   },
+   {
+    "position": 5,
+    "n_articles_reaching": 3198,
+    "share_reaching": 75.2,
+    "pct_with_function": {
+     "what": 6.0,
+     "how": 21.0,
+     "findings": 73.0,
+     "why_it_matters": 8.8
+    },
+    "pct_multi_label": 14.4,
+    "pct_no_function": 5.9,
+    "pct_other_content": 4.4,
+    "pct_connective_only": 2.4,
+    "top_label_sets": [
+     {
+      "set": "F",
+      "pct": 60.7
+     },
+     {
+      "set": "H",
+      "pct": 9.7
+     },
+     {
+      "set": "HF",
+      "pct": 9.0
+     },
+     {
+      "set": "none",
+      "pct": 5.9
+     },
+     {
+      "set": "Y",
+      "pct": 5.9
+     },
+     {
+      "set": "W",
+      "pct": 3.3
+     }
+    ]
+   },
+   {
+    "position": 6,
+    "n_articles_reaching": 2087,
+    "share_reaching": 49.1,
+    "pct_with_function": {
+     "what": 4.8,
+     "how": 18.6,
+     "findings": 72.4,
+     "why_it_matters": 10.3
+    },
+    "pct_multi_label": 13.4,
+    "pct_no_function": 7.7,
+    "pct_other_content": 4.7,
+    "pct_connective_only": 4.3,
+    "top_label_sets": [
+     {
+      "set": "F",
+      "pct": 60.4
+     },
+     {
+      "set": "HF",
+      "pct": 9.2
+     },
+     {
+      "set": "Y",
+      "pct": 7.8
+     },
+     {
+      "set": "H",
+      "pct": 7.7
+     },
+     {
+      "set": "none",
+      "pct": 7.7
+     },
+     {
+      "set": "W",
+      "pct": 3.0
+     }
+    ]
+   },
+   {
+    "position": 7,
+    "n_articles_reaching": 1220,
+    "share_reaching": 28.7,
+    "pct_with_function": {
+     "what": 5.1,
+     "how": 16.9,
+     "findings": 71.1,
+     "why_it_matters": 12.1
+    },
+    "pct_multi_label": 12.0,
+    "pct_no_function": 7.2,
+    "pct_other_content": 4.3,
+    "pct_connective_only": 3.9,
+    "top_label_sets": [
+     {
+      "set": "F",
+      "pct": 60.9
+     },
+     {
+      "set": "Y",
+      "pct": 8.9
+     },
+     {
+      "set": "H",
+      "pct": 8.0
+     },
+     {
+      "set": "none",
+      "pct": 7.2
+     },
+     {
+      "set": "HF",
+      "pct": 6.6
+     },
+     {
+      "set": "W",
+      "pct": 2.9
+     }
+    ]
+   },
+   {
+    "position": 8,
+    "n_articles_reaching": 656,
+    "share_reaching": 15.4,
+    "pct_with_function": {
+     "what": 5.2,
+     "how": 15.1,
+     "findings": 72.3,
+     "why_it_matters": 12.8
+    },
+    "pct_multi_label": 11.9,
+    "pct_no_function": 6.6,
+    "pct_other_content": 5.5,
+    "pct_connective_only": 2.1,
+    "top_label_sets": [
+     {
+      "set": "F",
+      "pct": 62.5
+     },
+     {
+      "set": "Y",
+      "pct": 9.3
+     },
+     {
+      "set": "H",
+      "pct": 6.7
+     },
+     {
+      "set": "none",
+      "pct": 6.6
+     },
+     {
+      "set": "HF",
+      "pct": 6.2
+     },
+     {
+      "set": "FY",
+      "pct": 3.4
+     }
+    ]
+   },
+   {
+    "position": 9,
+    "n_articles_reaching": 337,
+    "share_reaching": 7.9,
+    "pct_with_function": {
+     "what": 5.6,
+     "how": 16.9,
+     "findings": 68.2,
+     "why_it_matters": 15.4
+    },
+    "pct_multi_label": 13.4,
+    "pct_no_function": 8.0,
+    "pct_other_content": 5.3,
+    "pct_connective_only": 3.0,
+    "top_label_sets": [
+     {
+      "set": "F",
+      "pct": 57.0
+     },
+     {
+      "set": "Y",
+      "pct": 11.6
+     },
+     {
+      "set": "none",
+      "pct": 8.0
+     },
+     {
+      "set": "HF",
+      "pct": 7.1
+     },
+     {
+      "set": "H",
+      "pct": 6.8
+     },
+     {
+      "set": "W",
+      "pct": 3.3
+     }
+    ]
+   },
+   {
+    "position": 10,
+    "n_articles_reaching": 170,
+    "share_reaching": 4.0,
+    "pct_with_function": {
+     "what": 6.5,
+     "how": 12.9,
+     "findings": 70.6,
+     "why_it_matters": 15.3
+    },
+    "pct_multi_label": 11.8,
+    "pct_no_function": 6.5,
+    "pct_other_content": 7.6,
+    "pct_connective_only": 1.2,
+    "top_label_sets": [
+     {
+      "set": "F",
+      "pct": 61.2
+     },
+     {
+      "set": "Y",
+      "pct": 10.6
+     },
+     {
+      "set": "none",
+      "pct": 6.5
+     },
+     {
+      "set": "H",
+      "pct": 5.9
+     },
+     {
+      "set": "HF",
+      "pct": 4.7
+     },
+     {
+      "set": "FY",
+      "pct": 4.7
+     }
+    ]
+   },
+   {
+    "position": 11,
+    "n_articles_reaching": 92,
+    "share_reaching": 2.2,
+    "pct_with_function": {
+     "what": 5.4,
+     "how": 12.0,
+     "findings": 76.1,
+     "why_it_matters": 18.5
+    },
+    "pct_multi_label": 16.3,
+    "pct_no_function": 4.3,
+    "pct_other_content": 3.3,
+    "pct_connective_only": 1.1,
+    "top_label_sets": [
+     {
+      "set": "F",
+      "pct": 62.0
+     },
+     {
+      "set": "Y",
+      "pct": 12.0
+     },
+     {
+      "set": "HF",
+      "pct": 6.5
+     },
+     {
+      "set": "FY",
+      "pct": 6.5
+     },
+     {
+      "set": "none",
+      "pct": 4.3
+     },
+     {
+      "set": "H",
+      "pct": 3.3
+     }
+    ]
+   },
+   {
+    "position": 12,
+    "n_articles_reaching": 46,
+    "share_reaching": 1.1,
+    "pct_with_function": {
+     "what": 10.9,
+     "how": 13.0,
+     "findings": 60.9,
+     "why_it_matters": 23.9
+    },
+    "pct_multi_label": 17.4,
+    "pct_no_function": 8.7,
+    "pct_other_content": 10.9,
+    "pct_connective_only": 0.0,
+    "top_label_sets": [
+     {
+      "set": "F",
+      "pct": 50.0
+     },
+     {
+      "set": "Y",
+      "pct": 15.2
+     },
+     {
+      "set": "none",
+      "pct": 8.7
+     },
+     {
+      "set": "FY",
+      "pct": 8.7
+     },
+     {
+      "set": "WH",
+      "pct": 6.5
+     },
+     {
+      "set": "W",
+      "pct": 4.3
+     }
+    ]
+   },
+   {
+    "position": 13,
+    "n_articles_reaching": 24,
+    "share_reaching": 0.6,
+    "pct_with_function": {
+     "what": 0.0,
+     "how": 25.0,
+     "findings": 58.3,
+     "why_it_matters": 16.7
+    },
+    "pct_multi_label": 8.3,
+    "pct_no_function": 8.3,
+    "pct_other_content": 8.3,
+    "pct_connective_only": 0.0,
+    "top_label_sets": [
+     {
+      "set": "F",
+      "pct": 50.0
+     },
+     {
+      "set": "H",
+      "pct": 16.7
+     },
+     {
+      "set": "Y",
+      "pct": 16.7
+     },
+     {
+      "set": "HF",
+      "pct": 8.3
+     },
+     {
+      "set": "none",
+      "pct": 8.3
+     }
+    ]
+   },
+   {
+    "position": 14,
+    "n_articles_reaching": 10,
+    "share_reaching": 0.2,
+    "pct_with_function": {
+     "what": 10.0,
+     "how": 20.0,
+     "findings": 80.0,
+     "why_it_matters": 10.0
+    },
+    "pct_multi_label": 30.0,
+    "pct_no_function": 10.0,
+    "pct_other_content": 0.0,
+    "pct_connective_only": 0.0,
+    "top_label_sets": [
+     {
+      "set": "F",
+      "pct": 50.0
+     },
+     {
+      "set": "HF",
+      "pct": 20.0
+     },
+     {
+      "set": "FY",
+      "pct": 10.0
+     },
+     {
+      "set": "W",
+      "pct": 10.0
+     },
+     {
+      "set": "none",
+      "pct": 10.0
+     }
+    ]
+   },
+   {
+    "position": 15,
+    "n_articles_reaching": 6,
+    "share_reaching": 0.1,
+    "pct_with_function": {
+     "what": 16.7,
+     "how": 16.7,
+     "findings": 50.0,
+     "why_it_matters": 0.0
+    },
+    "pct_multi_label": 16.7,
+    "pct_no_function": 33.3,
+    "pct_other_content": 33.3,
+    "pct_connective_only": 0.0,
+    "top_label_sets": [
+     {
+      "set": "F",
+      "pct": 50.0
+     },
+     {
+      "set": "none",
+      "pct": 33.3
+     },
+     {
+      "set": "WH",
+      "pct": 16.7
+     }
+    ]
+   },
+   {
+    "position": 16,
+    "n_articles_reaching": 6,
+    "share_reaching": 0.1,
+    "pct_with_function": {
+     "what": 0.0,
+     "how": 16.7,
+     "findings": 100.0,
+     "why_it_matters": 0.0
+    },
+    "pct_multi_label": 16.7,
+    "pct_no_function": 0.0,
+    "pct_other_content": 0.0,
+    "pct_connective_only": 0.0,
+    "top_label_sets": [
+     {
+      "set": "F",
+      "pct": 83.3
+     },
+     {
+      "set": "HF",
+      "pct": 16.7
+     }
+    ]
+   },
+   {
+    "position": 17,
+    "n_articles_reaching": 4,
+    "share_reaching": 0.1,
+    "pct_with_function": {
+     "what": 25.0,
+     "how": 0.0,
+     "findings": 25.0,
+     "why_it_matters": 0.0
+    },
+    "pct_multi_label": 0.0,
+    "pct_no_function": 50.0,
+    "pct_other_content": 50.0,
+    "pct_connective_only": 0.0,
+    "top_label_sets": [
+     {
+      "set": "none",
+      "pct": 50.0
+     },
+     {
+      "set": "W",
+      "pct": 25.0
+     },
+     {
+      "set": "F",
+      "pct": 25.0
+     }
+    ]
+   },
+   {
+    "position": 18,
+    "n_articles_reaching": 2,
+    "share_reaching": 0.0,
+    "pct_with_function": {
+     "what": 0.0,
+     "how": 0.0,
+     "findings": 50.0,
+     "why_it_matters": 0.0
+    },
+    "pct_multi_label": 0.0,
+    "pct_no_function": 50.0,
+    "pct_other_content": 50.0,
+    "pct_connective_only": 0.0,
+    "top_label_sets": [
+     {
+      "set": "none",
+      "pct": 50.0
+     },
+     {
+      "set": "F",
+      "pct": 50.0
+     }
+    ]
+   },
+   {
+    "position": 19,
+    "n_articles_reaching": 1,
+    "share_reaching": 0.0,
+    "pct_with_function": {
+     "what": 0.0,
+     "how": 0.0,
+     "findings": 0.0,
+     "why_it_matters": 100.0
+    },
+    "pct_multi_label": 0.0,
+    "pct_no_function": 0.0,
+    "pct_other_content": 0.0,
+    "pct_connective_only": 0.0,
+    "top_label_sets": [
+     {
+      "set": "Y",
+      "pct": 100.0
+     }
+    ]
+   }
+  ],
+  "conditional": {
+   "4": {
+    "n_articles": 806,
+    "share_of_all": 19.0,
+    "position_matrix": [
+     {
+      "position": 1,
+      "n_articles_reaching": 806,
+      "share_reaching": 100.0,
+      "pct_with_function": {
+       "what": 56.3,
+       "how": 36.2,
+       "findings": 13.0,
+       "why_it_matters": 0.4
+      },
+      "pct_multi_label": 26.6,
+      "pct_no_function": 20.6,
+      "pct_other_content": 23.7,
+      "pct_connective_only": 0.0,
+      "top_label_sets": [
+       {
+        "set": "W",
+        "pct": 33.6
+       },
+       {
+        "set": "WH",
+        "pct": 22.0
+       },
+       {
+        "set": "none",
+        "pct": 20.6
+       },
+       {
+        "set": "H",
+        "pct": 10.8
+       },
+       {
+        "set": "F",
+        "pct": 8.4
+       },
+       {
+        "set": "HF",
+        "pct": 3.5
+       }
+      ]
+     },
+     {
+      "position": 2,
+      "n_articles_reaching": 806,
+      "share_reaching": 100.0,
+      "pct_with_function": {
+       "what": 12.9,
+       "how": 46.8,
+       "findings": 52.9,
+       "why_it_matters": 1.2
+      },
+      "pct_multi_label": 23.0,
+      "pct_no_function": 9.6,
+      "pct_other_content": 12.7,
+      "pct_connective_only": 0.0,
+      "top_label_sets": [
+       {
+        "set": "F",
+        "pct": 36.2
+       },
+       {
+        "set": "H",
+        "pct": 24.9
+       },
+       {
+        "set": "HF",
+        "pct": 15.1
+       },
+       {
+        "set": "none",
+        "pct": 9.6
+       },
+       {
+        "set": "W",
+        "pct": 6.2
+       },
+       {
+        "set": "WH",
+        "pct": 6.2
+       }
+      ]
+     },
+     {
+      "position": 3,
+      "n_articles_reaching": 806,
+      "share_reaching": 100.0,
+      "pct_with_function": {
+       "what": 7.9,
+       "how": 32.0,
+       "findings": 76.7,
+       "why_it_matters": 2.9
+      },
+      "pct_multi_label": 21.7,
+      "pct_no_function": 2.7,
+      "pct_other_content": 4.8,
+      "pct_connective_only": 0.0,
+      "top_label_sets": [
+       {
+        "set": "F",
+        "pct": 59.9
+       },
+       {
+        "set": "HF",
+        "pct": 14.3
+       },
+       {
+        "set": "H",
+        "pct": 12.5
+       },
+       {
+        "set": "WH",
+        "pct": 4.7
+       },
+       {
+        "set": "none",
+        "pct": 2.7
+       },
+       {
+        "set": "W",
+        "pct": 2.1
+       }
+      ]
+     },
+     {
+      "position": 4,
+      "n_articles_reaching": 806,
+      "share_reaching": 100.0,
+      "pct_with_function": {
+       "what": 7.2,
+       "how": 19.7,
+       "findings": 75.9,
+       "why_it_matters": 17.6
+      },
+      "pct_multi_label": 23.7,
+      "pct_no_function": 4.6,
+      "pct_other_content": 4.2,
+      "pct_connective_only": 2.6,
+      "top_label_sets": [
+       {
+        "set": "F",
+        "pct": 54.8
+       },
+       {
+        "set": "HF",
+        "pct": 12.3
+       },
+       {
+        "set": "Y",
+        "pct": 9.8
+       },
+       {
+        "set": "FY",
+        "pct": 6.3
+       },
+       {
+        "set": "none",
+        "pct": 4.6
+       },
+       {
+        "set": "H",
+        "pct": 3.7
+       }
+      ]
+     }
+    ],
+    "top_patterns": [
+     {
+      "pattern": "WH F F F",
+      "n": 39,
+      "pct": 4.8
+     },
+     {
+      "pattern": "W H F F",
+      "n": 30,
+      "pct": 3.7
+     },
+     {
+      "pattern": "WH H F F",
+      "n": 26,
+      "pct": 3.2
+     },
+     {
+      "pattern": "W F F F",
+      "n": 26,
+      "pct": 3.2
+     },
+     {
+      "pattern": "W HF F F",
+      "n": 24,
+      "pct": 3.0
+     },
+     {
+      "pattern": "O WH F F",
+      "n": 17,
+      "pct": 2.1
+     },
+     {
+      "pattern": "H F F F",
+      "n": 13,
+      "pct": 1.6
+     },
+     {
+      "pattern": "F F F F",
+      "n": 12,
+      "pct": 1.5
+     },
+     {
+      "pattern": "W H H F",
+      "n": 11,
+      "pct": 1.4
+     },
+     {
+      "pattern": "H H F F",
+      "n": 11,
+      "pct": 1.4
+     }
+    ]
+   },
+   "5": {
+    "n_articles": 1111,
+    "share_of_all": 26.1,
+    "position_matrix": [
+     {
+      "position": 1,
+      "n_articles_reaching": 1111,
+      "share_reaching": 100.0,
+      "pct_with_function": {
+       "what": 55.7,
+       "how": 29.6,
+       "findings": 9.3,
+       "why_it_matters": 0.2
+      },
+      "pct_multi_label": 21.2,
+      "pct_no_function": 26.6,
+      "pct_other_content": 29.3,
+      "pct_connective_only": 0.1,
+      "top_label_sets": [
+       {
+        "set": "W",
+        "pct": 36.8
+       },
+       {
+        "set": "none",
+        "pct": 26.6
+       },
+       {
+        "set": "WH",
+        "pct": 18.5
+       },
+       {
+        "set": "H",
+        "pct": 8.7
+       },
+       {
+        "set": "F",
+        "pct": 6.8
+       },
+       {
+        "set": "HF",
+        "pct": 2.3
+       }
+      ]
+     },
+     {
+      "position": 2,
+      "n_articles_reaching": 1111,
+      "share_reaching": 100.0,
+      "pct_with_function": {
+       "what": 18.4,
+       "how": 45.5,
+       "findings": 39.2,
+       "why_it_matters": 0.4
+      },
+      "pct_multi_label": 19.3,
+      "pct_no_function": 16.2,
+      "pct_other_content": 18.7,
+      "pct_connective_only": 0.4,
+      "top_label_sets": [
+       {
+        "set": "F",
+        "pct": 28.9
+       },
+       {
+        "set": "H",
+        "pct": 27.0
+       },
+       {
+        "set": "none",
+        "pct": 16.2
+       },
+       {
+        "set": "HF",
+        "pct": 9.3
+       },
+       {
+        "set": "WH",
+        "pct": 8.8
+       },
+       {
+        "set": "W",
+        "pct": 8.6
+       }
+      ]
+     },
+     {
+      "position": 3,
+      "n_articles_reaching": 1111,
+      "share_reaching": 100.0,
+      "pct_with_function": {
+       "what": 8.3,
+       "how": 33.3,
+       "findings": 68.9,
+       "why_it_matters": 1.6
+      },
+      "pct_multi_label": 16.6,
+      "pct_no_function": 4.5,
+      "pct_other_content": 5.9,
+      "pct_connective_only": 0.3,
+      "top_label_sets": [
+       {
+        "set": "F",
+        "pct": 56.2
+       },
+       {
+        "set": "H",
+        "pct": 18.0
+       },
+       {
+        "set": "HF",
+        "pct": 11.4
+       },
+       {
+        "set": "none",
+        "pct": 4.5
+       },
+       {
+        "set": "W",
+        "pct": 3.9
+       },
+       {
+        "set": "WH",
+        "pct": 3.6
+       }
+      ]
+     },
+     {
+      "position": 4,
+      "n_articles_reaching": 1111,
+      "share_reaching": 100.0,
+      "pct_with_function": {
+       "what": 5.6,
+       "how": 21.9,
+       "findings": 80.9,
+       "why_it_matters": 5.4
+      },
+      "pct_multi_label": 15.8,
+      "pct_no_function": 2.2,
+      "pct_other_content": 2.8,
+      "pct_connective_only": 0.4,
+      "top_label_sets": [
+       {
+        "set": "F",
+        "pct": 67.6
+       },
+       {
+        "set": "HF",
+        "pct": 10.7
+       },
+       {
+        "set": "H",
+        "pct": 8.6
+       },
+       {
+        "set": "Y",
+        "pct": 3.2
+       },
+       {
+        "set": "W",
+        "pct": 2.6
+       },
+       {
+        "set": "WH",
+        "pct": 2.4
+       }
+      ]
+     },
+     {
+      "position": 5,
+      "n_articles_reaching": 1111,
+      "share_reaching": 100.0,
+      "pct_with_function": {
+       "what": 5.6,
+       "how": 16.4,
+       "findings": 69.9,
+       "why_it_matters": 19.4
+      },
+      "pct_multi_label": 18.5,
+      "pct_no_function": 7.7,
+      "pct_other_content": 3.8,
+      "pct_connective_only": 4.9,
+      "top_label_sets": [
+       {
+        "set": "F",
+        "pct": 52.9
+       },
+       {
+        "set": "Y",
+        "pct": 13.7
+       },
+       {
+        "set": "HF",
+        "pct": 11.0
+       },
+       {
+        "set": "none",
+        "pct": 7.7
+       },
+       {
+        "set": "FY",
+        "pct": 5.2
+       },
+       {
+        "set": "W",
+        "pct": 3.7
+       }
+      ]
+     }
+    ],
+    "top_patterns": [
+     {
+      "pattern": "W H F F F",
+      "n": 40,
+      "pct": 3.6
+     },
+     {
+      "pattern": "WH F F F F",
+      "n": 33,
+      "pct": 3.0
+     },
+     {
+      "pattern": "O WH F F F",
+      "n": 18,
+      "pct": 1.6
+     },
+     {
+      "pattern": "W F F F F",
+      "n": 17,
+      "pct": 1.5
+     },
+     {
+      "pattern": "WH H F F F",
+      "n": 15,
+      "pct": 1.4
+     },
+     {
+      "pattern": "H H F F F",
+      "n": 15,
+      "pct": 1.4
+     },
+     {
+      "pattern": "W H H F F",
+      "n": 14,
+      "pct": 1.3
+     },
+     {
+      "pattern": "W F F F HF",
+      "n": 11,
+      "pct": 1.0
+     },
+     {
+      "pattern": "W O F F F",
+      "n": 10,
+      "pct": 0.9
+     },
+     {
+      "pattern": "H F F F F",
+      "n": 9,
+      "pct": 0.8
+     }
+    ]
+   },
+   "6": {
+    "n_articles": 867,
+    "share_of_all": 20.4,
+    "position_matrix": [
+     {
+      "position": 1,
+      "n_articles_reaching": 867,
+      "share_reaching": 100.0,
+      "pct_with_function": {
+       "what": 53.2,
+       "how": 26.5,
+       "findings": 8.8,
+       "why_it_matters": 0.2
+      },
+      "pct_multi_label": 17.2,
+      "pct_no_function": 29.1,
+      "pct_other_content": 31.5,
+      "pct_connective_only": 0.0,
+      "top_label_sets": [
+       {
+        "set": "W",
+        "pct": 37.6
+       },
+       {
+        "set": "none",
+        "pct": 29.1
+       },
+       {
+        "set": "WH",
+        "pct": 14.5
+       },
+       {
+        "set": "H",
+        "pct": 9.9
+       },
+       {
+        "set": "F",
+        "pct": 6.1
+       },
+       {
+        "set": "HF",
+        "pct": 1.5
+       }
+      ]
+     },
+     {
+      "position": 2,
+      "n_articles_reaching": 867,
+      "share_reaching": 100.0,
+      "pct_with_function": {
+       "what": 16.5,
+       "how": 48.1,
+       "findings": 29.5,
+       "why_it_matters": 0.0
+      },
+      "pct_multi_label": 14.4,
+      "pct_no_function": 20.4,
+      "pct_other_content": 23.3,
+      "pct_connective_only": 0.6,
+      "top_label_sets": [
+       {
+        "set": "H",
+        "pct": 33.8
+       },
+       {
+        "set": "F",
+        "pct": 22.1
+       },
+       {
+        "set": "none",
+        "pct": 20.4
+       },
+       {
+        "set": "W",
+        "pct": 9.2
+       },
+       {
+        "set": "HF",
+        "pct": 7.2
+       },
+       {
+        "set": "WH",
+        "pct": 7.0
+       }
+      ]
+     },
+     {
+      "position": 3,
+      "n_articles_reaching": 867,
+      "share_reaching": 100.0,
+      "pct_with_function": {
+       "what": 11.5,
+       "how": 39.1,
+       "findings": 55.1,
+       "why_it_matters": 0.8
+      },
+      "pct_multi_label": 14.8,
+      "pct_no_function": 8.4,
+      "pct_other_content": 9.7,
+      "pct_connective_only": 0.7,
+      "top_label_sets": [
+       {
+        "set": "F",
+        "pct": 45.7
+       },
+       {
+        "set": "H",
+        "pct": 24.6
+       },
+       {
+        "set": "HF",
+        "pct": 9.0
+       },
+       {
+        "set": "none",
+        "pct": 8.4
+       },
+       {
+        "set": "W",
+        "pct": 6.1
+       },
+       {
+        "set": "WH",
+        "pct": 5.2
+       }
+      ]
+     },
+     {
+      "position": 4,
+      "n_articles_reaching": 867,
+      "share_reaching": 100.0,
+      "pct_with_function": {
+       "what": 6.1,
+       "how": 25.3,
+       "findings": 75.2,
+       "why_it_matters": 1.6
+      },
+      "pct_multi_label": 11.2,
+      "pct_no_function": 3.2,
+      "pct_other_content": 4.5,
+      "pct_connective_only": 0.2,
+      "top_label_sets": [
+       {
+        "set": "F",
+        "pct": 66.2
+       },
+       {
+        "set": "H",
+        "pct": 15.6
+       },
+       {
+        "set": "HF",
+        "pct": 7.3
+       },
+       {
+        "set": "W",
+        "pct": 3.2
+       },
+       {
+        "set": "none",
+        "pct": 3.2
+       },
+       {
+        "set": "WH",
+        "pct": 2.2
+       }
+      ]
+     },
+     {
+      "position": 5,
+      "n_articles_reaching": 867,
+      "share_reaching": 100.0,
+      "pct_with_function": {
+       "what": 5.7,
+       "how": 19.8,
+       "findings": 81.3,
+       "why_it_matters": 4.6
+      },
+      "pct_multi_label": 14.4,
+      "pct_no_function": 3.0,
+      "pct_other_content": 2.8,
+      "pct_connective_only": 0.8,
+      "top_label_sets": [
+       {
+        "set": "F",
+        "pct": 69.6
+       },
+       {
+        "set": "HF",
+        "pct": 9.2
+       },
+       {
+        "set": "H",
+        "pct": 8.1
+       },
+       {
+        "set": "none",
+        "pct": 3.0
+       },
+       {
+        "set": "Y",
+        "pct": 2.7
+       },
+       {
+        "set": "WH",
+        "pct": 2.4
+       }
+      ]
+     },
+     {
+      "position": 6,
+      "n_articles_reaching": 867,
+      "share_reaching": 100.0,
+      "pct_with_function": {
+       "what": 4.4,
+       "how": 15.8,
+       "findings": 67.5,
+       "why_it_matters": 18.6
+      },
+      "pct_multi_label": 16.4,
+      "pct_no_function": 10.8,
+      "pct_other_content": 4.7,
+      "pct_connective_only": 7.8,
+      "top_label_sets": [
+       {
+        "set": "F",
+        "pct": 52.1
+       },
+       {
+        "set": "Y",
+        "pct": 14.3
+       },
+       {
+        "set": "none",
+        "pct": 10.8
+       },
+       {
+        "set": "HF",
+        "pct": 10.4
+       },
+       {
+        "set": "H",
+        "pct": 3.7
+       },
+       {
+        "set": "FY",
+        "pct": 3.6
+       }
+      ]
+     }
+    ],
+    "top_patterns": [
+     {
+      "pattern": "W H F F F F",
+      "n": 21,
+      "pct": 2.4
+     },
+     {
+      "pattern": "WH F F F F F",
+      "n": 15,
+      "pct": 1.7
+     },
+     {
+      "pattern": "W H H F F F",
+      "n": 15,
+      "pct": 1.7
+     },
+     {
+      "pattern": "WH H F F F F",
+      "n": 14,
+      "pct": 1.6
+     },
+     {
+      "pattern": "O W H F F F",
+      "n": 10,
+      "pct": 1.2
+     },
+     {
+      "pattern": "W F F F F F",
+      "n": 9,
+      "pct": 1.0
+     },
+     {
+      "pattern": "H H H F F F",
+      "n": 7,
+      "pct": 0.8
+     },
+     {
+      "pattern": "H H F F F F",
+      "n": 7,
+      "pct": 0.8
+     },
+     {
+      "pattern": "W H HF F F F",
+      "n": 7,
+      "pct": 0.8
+     },
+     {
+      "pattern": "H F F F F F",
+      "n": 6,
+      "pct": 0.7
+     }
+    ]
+   }
+  }
+ },
+ "endpoints": {
+  "first_sentence": {
+   "n": 4250,
+   "label_set_distribution": [
+    {
+     "set": "W",
+     "n": 1526,
+     "pct": 35.9
+    },
+    {
+     "set": "O",
+     "n": 1189,
+     "pct": 28.0
+    },
+    {
+     "set": "WH",
+     "n": 734,
+     "pct": 17.3
+    },
+    {
+     "set": "H",
+     "n": 392,
+     "pct": 9.2
+    },
+    {
+     "set": "F",
+     "n": 280,
+     "pct": 6.6
+    },
+    {
+     "set": "HF",
+     "n": 90,
+     "pct": 2.1
+    },
+    {
+     "set": "WF",
+     "n": 16,
+     "pct": 0.4
+    },
+    {
+     "set": "WHF",
+     "n": 10,
+     "pct": 0.2
+    },
+    {
+     "set": "FY",
+     "n": 5,
+     "pct": 0.1
+    },
+    {
+     "set": "-",
+     "n": 3,
+     "pct": 0.1
+    },
+    {
+     "set": "C",
+     "n": 2,
+     "pct": 0.0
+    },
+    {
+     "set": "Y",
+     "n": 1,
+     "pct": 0.0
+    }
+   ],
+   "pct_with_function": {
+    "what": 53.8,
+    "how": 28.9,
+    "findings": 9.4,
+    "why_it_matters": 0.2
+   },
+   "by_journal_top": {
+    "AER": [
+     {
+      "set": "W",
+      "pct": 34.9
+     },
+     {
+      "set": "O",
+      "pct": 27.5
+     },
+     {
+      "set": "WH",
+      "pct": 18.2
+     },
+     {
+      "set": "H",
+      "pct": 9.4
+     }
+    ],
+    "ECMA": [
+     {
+      "set": "W",
+      "pct": 41.2
+     },
+     {
+      "set": "O",
+      "pct": 26.8
+     },
+     {
+      "set": "WH",
+      "pct": 12.7
+     },
+     {
+      "set": "H",
+      "pct": 9.4
+     }
+    ],
+    "JPE": [
+     {
+      "set": "W",
+      "pct": 32.0
+     },
+     {
+      "set": "O",
+      "pct": 27.3
+     },
+     {
+      "set": "WH",
+      "pct": 20.1
+     },
+     {
+      "set": "H",
+      "pct": 10.9
+     }
+    ],
+    "QJE": [
+     {
+      "set": "O",
+      "pct": 33.0
+     },
+     {
+      "set": "W",
+      "pct": 32.6
+     },
+     {
+      "set": "WH",
+      "pct": 19.7
+     },
+     {
+      "set": "F",
+      "pct": 6.5
+     }
+    ],
+    "REStud": [
+     {
+      "set": "W",
+      "pct": 38.5
+     },
+     {
+      "set": "O",
+      "pct": 27.3
+     },
+     {
+      "set": "WH",
+      "pct": 15.8
+     },
+     {
+      "set": "H",
+      "pct": 9.6
+     }
+    ]
+   }
+  },
+  "last_sentence": {
+   "n": 4250,
+   "label_set_distribution": [
+    {
+     "set": "F",
+     "n": 2271,
+     "pct": 53.4
+    },
+    {
+     "set": "Y",
+     "n": 590,
+     "pct": 13.9
+    },
+    {
+     "set": "HF",
+     "n": 424,
+     "pct": 10.0
+    },
+    {
+     "set": "FY",
+     "n": 219,
+     "pct": 5.2
+    },
+    {
+     "set": "C",
+     "n": 206,
+     "pct": 4.8
+    },
+    {
+     "set": "H",
+     "n": 160,
+     "pct": 3.8
+    },
+    {
+     "set": "W",
+     "n": 123,
+     "pct": 2.9
+    },
+    {
+     "set": "O",
+     "n": 110,
+     "pct": 2.6
+    },
+    {
+     "set": "WH",
+     "n": 59,
+     "pct": 1.4
+    },
+    {
+     "set": "WF",
+     "n": 26,
+     "pct": 0.6
+    },
+    {
+     "set": "HFY",
+     "n": 21,
+     "pct": 0.5
+    },
+    {
+     "set": "-",
+     "n": 15,
+     "pct": 0.4
+    }
+   ],
+   "pct_with_function": {
+    "what": 5.3,
+    "how": 16.2,
+    "findings": 70.0,
+    "why_it_matters": 19.9
+   },
+   "by_journal_top": {
+    "AER": [
+     {
+      "set": "F",
+      "pct": 50.9
+     },
+     {
+      "set": "Y",
+      "pct": 13.2
+     },
+     {
+      "set": "C",
+      "pct": 11.3
+     },
+     {
+      "set": "HF",
+      "pct": 10.2
+     }
+    ],
+    "ECMA": [
+     {
+      "set": "F",
+      "pct": 51.0
+     },
+     {
+      "set": "Y",
+      "pct": 14.0
+     },
+     {
+      "set": "HF",
+      "pct": 8.7
+     },
+     {
+      "set": "H",
+      "pct": 6.1
+     }
+    ],
+    "JPE": [
+     {
+      "set": "F",
+      "pct": 57.5
+     },
+     {
+      "set": "Y",
+      "pct": 11.7
+     },
+     {
+      "set": "HF",
+      "pct": 10.9
+     },
+     {
+      "set": "FY",
+      "pct": 4.5
+     }
+    ],
+    "QJE": [
+     {
+      "set": "F",
+      "pct": 53.4
+     },
+     {
+      "set": "Y",
+      "pct": 20.7
+     },
+     {
+      "set": "HF",
+      "pct": 10.2
+     },
+     {
+      "set": "FY",
+      "pct": 7.3
+     }
+    ],
+    "REStud": [
+     {
+      "set": "F",
+      "pct": 55.4
+     },
+     {
+      "set": "Y",
+      "pct": 12.7
+     },
+     {
+      "set": "HF",
+      "pct": 9.7
+     },
+     {
+      "set": "FY",
+      "pct": 5.7
+     }
+    ]
+   }
+  }
+ },
+ "transitions": {
+  "collapsed": {
+   "priority_rule": "F > H > W > Y；无功能句（含 connective_only）归为 O（背景/其他）",
+   "from_states": [
+    "START",
+    "W",
+    "H",
+    "F",
+    "Y",
+    "O"
+   ],
+   "to_states": [
+    "W",
+    "H",
+    "F",
+    "Y",
+    "O",
+    "END"
+   ],
+   "counts": {
+    "START": {
+     "W": 1527,
+     "H": 1127,
+     "F": 401,
+     "Y": 1,
+     "O": 1194,
+     "END": 0
+    },
+    "W": {
+     "W": 197,
+     "H": 960,
+     "F": 954,
+     "Y": 10,
+     "O": 289,
+     "END": 126
+    },
+    "H": {
+     "W": 178,
+     "H": 1562,
+     "F": 2994,
+     "Y": 44,
+     "O": 248,
+     "END": 229
+    },
+    "F": {
+     "W": 240,
+     "H": 931,
+     "F": 7688,
+     "Y": 667,
+     "O": 450,
+     "END": 2974
+    },
+    "Y": {
+     "W": 5,
+     "H": 23,
+     "F": 88,
+     "Y": 59,
+     "O": 37,
+     "END": 590
+    },
+    "O": {
+     "W": 389,
+     "H": 652,
+     "F": 825,
+     "Y": 21,
+     "O": 819,
+     "END": 331
+    }
+   },
+   "row_pct": {
+    "START": {
+     "W": 35.9,
+     "H": 26.5,
+     "F": 9.4,
+     "Y": 0.0,
+     "O": 28.1,
+     "END": 0.0
+    },
+    "W": {
+     "W": 7.8,
+     "H": 37.9,
+     "F": 37.6,
+     "Y": 0.4,
+     "O": 11.4,
+     "END": 5.0
+    },
+    "H": {
+     "W": 3.4,
+     "H": 29.7,
+     "F": 57.0,
+     "Y": 0.8,
+     "O": 4.7,
+     "END": 4.4
+    },
+    "F": {
+     "W": 1.9,
+     "H": 7.2,
+     "F": 59.4,
+     "Y": 5.2,
+     "O": 3.5,
+     "END": 23.0
+    },
+    "Y": {
+     "W": 0.6,
+     "H": 2.9,
+     "F": 11.0,
+     "Y": 7.4,
+     "O": 4.6,
+     "END": 73.6
+    },
+    "O": {
+     "W": 12.8,
+     "H": 21.5,
+     "F": 27.2,
+     "Y": 0.7,
+     "O": 27.0,
+     "END": 10.9
+    }
+   }
+  },
+  "contains": {
+   "note": "多标签句同时计入各功能；P(下一句含 g | 当前句含 f)，仅句间（不含 START/END）",
+   "row_n": {
+    "what": 3945,
+    "findings": 9976,
+    "how": 6553,
+    "why_it_matters": 363
+   },
+   "counts": {
+    "what": {
+     "what": 388,
+     "how": 1781,
+     "findings": 1945,
+     "why_it_matters": 60
+    },
+    "how": {
+     "what": 386,
+     "how": 2356,
+     "findings": 4164,
+     "why_it_matters": 246
+    },
+    "findings": {
+     "what": 489,
+     "how": 1891,
+     "findings": 7688,
+     "why_it_matters": 981
+    },
+    "why_it_matters": {
+     "what": 23,
+     "how": 75,
+     "findings": 185,
+     "why_it_matters": 88
+    }
+   },
+   "row_pct": {
+    "what": {
+     "what": 9.8,
+     "how": 45.1,
+     "findings": 49.3,
+     "why_it_matters": 1.5
+    },
+    "how": {
+     "what": 5.9,
+     "how": 36.0,
+     "findings": 63.5,
+     "why_it_matters": 3.8
+    },
+    "findings": {
+     "what": 4.9,
+     "how": 19.0,
+     "findings": 77.1,
+     "why_it_matters": 9.8
+    },
+    "why_it_matters": {
+     "what": 6.3,
+     "how": 20.7,
+     "findings": 51.0,
+     "why_it_matters": 24.2
+    }
+   }
+  },
+  "top_paths_overall": [
+   {
+    "path": "START-H-F-F-F-END",
+    "n": 108,
+    "pct": 2.5
+   },
+   {
+    "path": "START-W-F-F-F-END",
+    "n": 87,
+    "pct": 2.0
+   },
+   {
+    "path": "START-W-H-F-F-F-END",
+    "n": 75,
+    "pct": 1.8
+   },
+   {
+    "path": "START-H-F-F-F-F-END",
+    "n": 73,
+    "pct": 1.7
+   },
+   {
+    "path": "START-W-F-F-F-F-END",
+    "n": 73,
+    "pct": 1.7
+   },
+   {
+    "path": "START-W-H-F-F-END",
+    "n": 56,
+    "pct": 1.3
+   },
+   {
+    "path": "START-F-F-F-F-END",
+    "n": 51,
+    "pct": 1.2
+   },
+   {
+    "path": "START-H-H-F-F-END",
+    "n": 51,
+    "pct": 1.2
+   },
+   {
+    "path": "START-H-H-F-F-F-END",
+    "n": 51,
+    "pct": 1.2
+   },
+   {
+    "path": "START-W-H-F-F-F-F-END",
+    "n": 50,
+    "pct": 1.2
+   }
+  ],
+  "top_paths_by_sentence_count": {
+   "4": {
+    "n_articles": 806,
+    "top": [
+     {
+      "path": "START-H-F-F-F-END",
+      "n": 108,
+      "pct": 13.4
+     },
+     {
+      "path": "START-W-F-F-F-END",
+      "n": 87,
+      "pct": 10.8
+     },
+     {
+      "path": "START-W-H-F-F-END",
+      "n": 56,
+      "pct": 6.9
+     },
+     {
+      "path": "START-F-F-F-F-END",
+      "n": 51,
+      "pct": 6.3
+     },
+     {
+      "path": "START-H-H-F-F-END",
+      "n": 51,
+      "pct": 6.3
+     }
+    ]
+   },
+   "5": {
+    "n_articles": 1111,
+    "top": [
+     {
+      "path": "START-W-H-F-F-F-END",
+      "n": 75,
+      "pct": 6.8
+     },
+     {
+      "path": "START-H-F-F-F-F-END",
+      "n": 73,
+      "pct": 6.6
+     },
+     {
+      "path": "START-W-F-F-F-F-END",
+      "n": 73,
+      "pct": 6.6
+     },
+     {
+      "path": "START-H-H-F-F-F-END",
+      "n": 51,
+      "pct": 4.6
+     },
+     {
+      "path": "START-O-H-F-F-F-END",
+      "n": 42,
+      "pct": 3.8
+     }
+    ]
+   },
+   "6": {
+    "n_articles": 867,
+    "top": [
+     {
+      "path": "START-W-H-F-F-F-F-END",
+      "n": 50,
+      "pct": 5.8
+     },
+     {
+      "path": "START-H-F-F-F-F-F-END",
+      "n": 42,
+      "pct": 4.8
+     },
+     {
+      "path": "START-H-H-F-F-F-F-END",
+      "n": 29,
+      "pct": 3.3
+     },
+     {
+      "path": "START-W-F-F-F-F-F-END",
+      "n": 24,
+      "pct": 2.8
+     },
+     {
+      "path": "START-W-H-H-F-F-F-END",
+      "n": 23,
+      "pct": 2.7
+     }
+    ]
+   }
+  }
+ }
+}
