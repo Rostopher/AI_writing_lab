@@ -1,0 +1,4 @@
+interface:
+  display_name: "Economics Abstract Writing · 经济学摘要"
+  short_description: "Draft and review economics abstracts with five questions"
+  default_prompt: "Use $econ-abstract-writing to guide me through five questions, then draft or review an English abstract once my results and Introduction are ready."

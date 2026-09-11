@@ -3,6 +3,15 @@
 研究「AI 如何理解和完成写作任务」的研究与工具项目：把期刊语料、写作案例与
 写作方法研究转化为文献认识、研究定位与写作支持。当前首个推进方向是**学术研究与写作**。
 
+## 使用写作 Skills
+
+**[经济学英文摘要写作 · econ-abstract-writing](skills/econ-abstract-writing/README.md)**：
+在研究结果、完整故事和 Introduction 已经形成之后，回答一个核心问题、一个关键方法和三个主要发现，
+再按 WHFFF 起草、检查或修改英文摘要。支持从研究材料起草、从全文提炼、检查已有摘要。
+安装方式、使用示例和研究依据见链接中的说明。
+
+[English guide: Economics Abstract Writing](skills/econ-abstract-writing/README.en.md).
+
 ## 项目定位
 
 AI 辅助写作不只是「生成文本」，核心问题是：怎样让 AI 理解写作目的、受众、材料与
@@ -25,6 +34,7 @@ AI 辅助写作不只是「生成文本」，核心问题是：怎样让 AI 理�
 | `repos/` | 外部参考仓库（只读，除非明确要求修改） |
 | `data/` | 数据层：原始 / 中间 / 处理结果 / 数据字典 |
 | `modules/` | 可执行研究工程模块（见下），逐步形成的通用写作流程也在其下 |
+| `skills/` | 可分享的 Agent skills 源码、使用说明与随包参考材料 |
 | `manuscripts/` | 正式写作区：本项目自身产出的论文、报告、章节草稿 |
 
 ## 模块规划
@@ -45,8 +55,10 @@ AI 辅助写作不只是「生成文本」，核心问题是：怎样让 AI 理�
 ## 当前可接续的材料
 
 2026-09-08，原 `playwright_crawler/research/projects/academic_paper_writing/` 的研究材料
-迁入本仓库。已有研究设计与参考分析，尚无标注实验结果、业务实现或论文工作区接入。
+迁入本仓库。此后已完成 4250 篇摘要的结构标注与描述分析，并整理出首版摘要写作 skill；
+写作效果评价和论文工作区接入仍待推进。
 
+- [摘要结构全量报告](notes/data/abstract_structure_full_report_v03.md)：语料、分析方法、结构分布与局限。
 - [写作分层分析框架](notes/concepts/paper_writing_analysis_framework.md)：整篇论证到词句表达。
 - [研究问题](ideas/project_charter.md)与[评价设计 proposal](ideas/evaluation_design.md)：事实保持、论证质量与评审一致性。
 - [六仓 writing skills 调研](ideas/writing_skills_survey.md)与[参考仓库入口](repos/README.md)：静态研究，不代表实测效果排名。
