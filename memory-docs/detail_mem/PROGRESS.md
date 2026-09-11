@@ -8,8 +8,8 @@ not_for: "高层状态（-> STATUS），决策来由（-> DECISIONS），带日�
 
 # Progress — 模块级实现清单
 
-> 更新：2026-09-10。摘要结构研究（academic_research 首个实现）已完成两轮付费运行；
-> 仓库已推送 GitHub public。
+> 更新：2026-09-11。摘要结构研究（academic_research 首个实现）已完成两轮付费运行；
+> 首个写作 skill `econ-abstract-writing` 已封装；仓库已推送 GitHub public。
 
 ## 主线
 
@@ -25,6 +25,16 @@ not_for: "高层状态（-> STATUS），决策来由（-> DECISIONS），带日�
   68 个 pytest 契约测试通过。两轮实际运行：pilot 100 篇 × 双模型（`run_20260908_a`）、
   全量 4250 篇 flash（`run_20260909_v03_full`）+ 100 篇验证集；产物在
   `data/processed/abstract_structure/`（含摘要全文的语料与逐篇标注仅本地，DEC-007）。
+- **传播图表与统计**（2026-09-11）：`build_tweet_aggregates.py` 从全量标注派生
+  推文聚合统计（带与全量报告的对账检查）；`plot_tweet_figures.py` /
+  `plot_abstract_blog_figures.py` / `word_frequency_by_function.py` 渲染推文图、
+  blog 图与按功能用词表；`plot_tweet_style_gallery.py` 可复现多风格试验稿
+  （styles/ 产物不入库）。
+- **首个写作 skill**（2026-09-11）：`skills/econ-abstract-writing/`——基于 4250 篇
+  结构标注认识封装的英文摘要写作 skill（WHFFF）；SKILL.md 英文为加载入口，
+  SKILL.zh.md 为阅读译本，references 双语；交流语言跟随用户、摘要默认英文。
+- **blog 草稿**（2026-09-11）：`manuscripts/draft/econ_abstract_blog.md` +
+  配图与 editorial notes，发布前校对中。
 - 目录与项目入口已建立；仓库已版本化并推送 GitHub public（`Rostopher/AI_writing_lab`）。
 - 研究材料：`notes/concepts/paper_writing_analysis_framework.md` 保存五层候选分析框架；
   `notes/pipelines/` 保存两仓详细分析与对比；`ideas/writing_skills_survey.md` 保存六仓静态调研。
@@ -34,6 +44,7 @@ not_for: "高层状态（-> STATUS），决策来由（-> DECISIONS），带日�
 
 ## 进行中
 
+- blog 发布前校对：`manuscripts/draft/econ_abstract_blog.md` 与 editorial notes。
 - 摘要结构研究第二阶段：15 篇不一致案例复核、规则审查小样本（§7/H5）、
   全量 pro 决策——均未启动；报告见 `notes/data/abstract_structure_full_report_v03.md` §10。
 - 学术写作评价设计：`ideas/evaluation_design.md` 提出 validity gate、分层评价、

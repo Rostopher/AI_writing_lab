@@ -37,6 +37,16 @@ not_for: "术语定义（-> GLOSSARY），当前状态（-> STATUS），全量�
   [全量 v0.3](../../notes/data/abstract_structure_full_report_v03.md)；
   设计与 prompt 版本见 `ideas/abstract_structure_study_design*.md`。
 - 运行产物：`data/processed/abstract_structure/run_*`（含摘要全文的语料与标注仅本地，DEC-007）。
+- 传播图表：[plot_tweet_figures.py](../../modules/academic_research/abstract_structure/plot_tweet_figures.py)、
+  [plot_abstract_blog_figures.py](../../modules/academic_research/abstract_structure/plot_abstract_blog_figures.py)；
+  聚合统计 `v03_full_tweet_aggregates.json`；多风格复现 `plot_tweet_style_gallery.py`。
+- blog 草稿：[econ_abstract_blog.md](../../manuscripts/draft/econ_abstract_blog.md)；
+  配图在 `manuscripts/figures/abstract_structure_{tweet,blog}/`。
+
+## 写作 Skills
+
+- 经济学英文摘要写作（WHFFF）：[econ-abstract-writing](../../skills/econ-abstract-writing/SKILL.md)
+  （加载入口英文；[中文译本](../../skills/econ-abstract-writing/SKILL.zh.md) 供阅读）。
 
 ## 模块（规划中 → 建立后更新真实入口）
 

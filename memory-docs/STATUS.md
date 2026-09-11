@@ -10,26 +10,27 @@ stale_after_days: 14
 
 # Status — AI Writing Lab
 
-> 更新时间：2026-09-10
+> 更新时间：2026-09-11
 
 ## Current Focus
 
-- 学术研究与写作为当前主线；首个实现 `modules/academic_research/abstract_structure/`
-  已完成摘要结构研究两轮付费运行（pilot + 全量描述），产出两份报告。
-- 仓库已建立 Git 版本化并推送 GitHub public（`Rostopher/AI_writing_lab`）。
+- 学术研究与写作为当前主线；摘要结构全量描述的认识已转化为首个可分享产出：
+  `skills/econ-abstract-writing/` 写作 skill（WHFFF 方法，中英双语文档）。
+- 配套传播材料已就位：推文聚合统计与结构图、blog 草稿（待发布前校对）。
 - 摘要结构研究第二阶段（规则审查 §7/H5、15 篇不一致案例复核、是否跑全量 pro）
   尚未启动；写作检查项落地前需先定目标期刊口径。
 
 ## Done（最近 3-5 条）
 
-- [x] Git 首次提交并推送 GitHub public（2026-09-10）— 6 个语义化 commit；私有路径改环境变量配置；含摘要全文产物留本地（DEC-007）
-- [x] 摘要结构全量描述 `run_20260909_v03_full`（2026-09-09）— 4250 篇 flash 标注零失败（¥96）；句数分布与位置×功能分析同日补入[全量报告](../notes/data/abstract_structure_full_report_v03.md)
+- [x] 首个写作 skill `econ-abstract-writing` 封装并推送（2026-09-11）— 单安装入口、英文 SKILL.md 为加载入口、中文为阅读译本；交流语言跟随用户、摘要默认英文；references 双语
+- [x] 摘要结构传播材料（2026-09-11）— 推文聚合统计 + 结构图（fig1–6）、blog 草稿与配图、按功能用词统计；风格试验稿 styles/ 不入库，可用脚本复现
+- [x] 摘要结构全量描述 `run_20260909_v03_full`（2026-09-09）— 4250 篇 flash 标注零失败（¥96）；见[全量报告](../notes/data/abstract_structure_full_report_v03.md)
 - [x] 摘要结构 pilot `run_20260908_a`（2026-09-08）— 100 篇双模型零失败（约 ¥7）；句数公式证伪；见[pilot 报告](../notes/data/abstract_structure_pilot_report.md)
-- [x] 接续旧学术写作研究（2026-09-08）— 材料进入 notes/ideas/repos；见[迁移档案](archive/20260908_academic_paper_writing_migration/manifest.md)
-- [x] 确定总项目形态与仓库初始化（2026-09-07）— 单仓库多方向（DEC-001）、research scaffold、memory-docs
+- [x] Git 首次提交并推送 GitHub public（2026-09-10）— 私有路径改环境变量；含摘要全文产物留本地（DEC-007）
 
 ## In Progress
 
+- blog 发布前校对：`manuscripts/draft/econ_abstract_blog.md` 附 editorial notes。
 - 摘要结构研究：描述阶段完成，可靠性补强与规则审查待启动（见 Backlog 前三条，
   执行顺序未确认）。
 - 学术写作评价设计：`ideas/evaluation_design.md` 仍为 proposal；Introduction rubric

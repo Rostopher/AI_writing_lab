@@ -63,3 +63,24 @@ v0.3。09-09 完成 4250 篇全量描述（`run_20260909_v03_full`，flash 单�
 - 相关决策：DEC-007（数据边界）；DEC-004 继续约束报告口径（观察 ≠ 因果）
 - 相关文档：`notes/data/abstract_structure_full_report_v03.md`、
   `modules/academic_research/abstract_structure/README.md`
+
+## 2026-09-10 → 09-11 — 从语料认识到可分享产出：首个写作 skill 与传播材料
+
+全量描述完成后，研究认识沿两条线落地。一是把「4250 篇摘要的结构共识」封装为
+首个写作 skill `econ-abstract-writing`（WHFFF：What→How→Findings×3）：用户明确要求
+单安装入口、中英双语文档——英文 `SKILL.md` 是 AI 加载入口，中文为阅读译本，
+指令内规定交流语言跟随用户、摘要默认英文。结构选择、教学示例与语料依据的
+references 同样双语，执行时只读一套内容，降低维护成本。
+
+二是传播材料：从已有标注派生推文聚合统计（脚本内置与全量报告的对账检查，
+不新增模型调用），渲染推文图与 blog 图，完成介绍该 skill 的 blog 草稿。
+制图时曾生成五套视觉风格试验稿（styles/，约 16M）；用户确认风格选定后
+中间稿不入库、已删除，保留可一键复现的生成脚本与随图数据——延续
+「派生可复现产物才入库」的边界（DEC-007）。
+
+skill 与 blog 的表述继续受 DEC-004 约束：语料模式是已发表语料中的观察，
+不声称某种写法提高录用率。blog 发布前校对仍在进行。
+
+- 相关决策：DEC-004、DEC-007
+- 相关文档：`skills/econ-abstract-writing/README.md`、
+  `manuscripts/draft/econ_abstract_blog.md`
