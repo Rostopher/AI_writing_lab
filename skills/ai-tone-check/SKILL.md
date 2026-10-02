@@ -12,7 +12,7 @@ description: 检查并修改文本中的「AI 味 / AI 腔」。用户说"看看
 1. **套话**：空泛表达与高频 AI 词（delve、foster、leverage、 genuinely、"it's worth noting"；值得注意的是、综上所述、赋能、助力……）
 2. **重复总结**：结尾套话（"Bottom Line:"、"In short:"、"The simplest mental model is:"；总而言之、由此可见）
 3. **机械结构**：对比框架（"This isn't about X. It's about Y"、"X, not Y"、"X—not Y"）、自问自答（"Why does this matter? Because..."）、不仅……更……、首先/其次/最后八股
-4. **不必要修饰**：生造连字符复合词（"exact-head checks"）、空泛限定词、罐头过渡
+4. **不必要修饰**：生造连字符复合词（"exact-head checks"，靠判断——三连字符启发式误报太多已移除）、空泛限定词、罐头过渡
 5. **空泛判断**：无证据、无数字、无具体对象的断言（正则抓不住，靠判断）
 6. **缺少具体信息**：该有名字、数字、例子的地方只有形容词（靠判断）
 7. **作者声音不一致**：段落间口吻忽人忽机、详略失衡（靠判断）
@@ -30,6 +30,8 @@ cat draft.md | python scripts/scan.py -
 ```
 
 脚本零依赖（纯标准库），输出每个命中的行号、类别、原文片段与分类统计，支持 `--json`。
+`.tex` 文件（或加 `--latex`）先做轻量归一化：剥离 `%` 行内注释，`---`/`--`/`` `` ``/`''`/`~`
+转成 Unicode 等价物，行数不变、行号对应原文件，使基于 Unicode 标点的句式能命中 LaTeX 源码。
 词表在 `wordlists/` 下（`en_slop.txt`、`zh_slop.txt`），纯文本一行一条，用户可自行增删；
 `re:` 前缀表示正则，否则按字面匹配（英文单词自动加词边界）。
 

@@ -2,11 +2,13 @@
 """扫描文本中的「AI 味」标记：词表 + 句式正则，纯标准库零依赖。
 
 用法:
-    python scan.py <文件> [--json]
-    cat draft.md | python scan.py -
+    python scan.py <文件> [--json] [--latex]
+    cat draft.md | python scan.py - --latex
 
 词表位于 ../wordlists/*.txt，格式: 匹配串<TAB>类别[<TAB>备注]，
 re: 前缀表示正则；纯英文单词自动加词边界，其余按字面子串匹配。
+.tex 文件（或 --latex）先做轻量归一化：剥离 % 行内注释，TeX 标点
+（--- -- `` '' ~）转 Unicode 等价物；行数不变，行号仍对应原文件。
 命中是候选信号，不是 verdict，需结合文体人工/agent 判断。
 """
 import argparse
@@ -45,18 +47,35 @@ def compile_pattern(pattern):
     return re.compile(re.escape(pattern), re.IGNORECASE)
 
 
-def scan(text, entries):
+def normalize_latex(text):
+    """LaTeX 源码轻量归一化：去 % 行内注释，TeX 标点写法转 Unicode，
+    使词表中基于 Unicode 的句式（如 "X—not Y"）能命中 .tex 源码。
+    不解析命令与环境；只逐行替换，行数保持不变以便行号对应原文件。
+    """
+    lines = []
+    for line in text.splitlines():
+        line = re.sub(r"(?<!\\)%.*$", "", line)             # 行内注释（\% 除外）
+        line = line.replace("---", "—").replace("--", "–")   # em/en dash
+        line = line.replace("``", '"').replace("''", '"')     # TeX 双引号
+        line = line.replace("`", "'")                         # 残余的开单引号
+        line = line.replace("~", " ")                          # 不可断行空格
+        lines.append(line)
+    return "\n".join(lines)
+
+
+def scan(text, entries, context_lines=None):
     raw_hits = []
     lines = text.splitlines()
     for regex, pattern, category, note, source in entries:
         for lineno, line in enumerate(lines, 1):
+            context = context_lines[lineno - 1] if context_lines else line
             for m in regex.finditer(line):
                 raw_hits.append((lineno, m.start(), m.end(), {
                     "line": lineno,
                     "category": category,
                     "pattern": pattern,
                     "matched": m.group(0),
-                    "context": line.strip()[:120],
+                    "context": context.strip()[:120],
                     "note": note,
                     "source": source,
                 }))
@@ -77,15 +96,24 @@ def main():
     ap = argparse.ArgumentParser(description="扫描文本中的 AI 味标记")
     ap.add_argument("file", help="目标文件路径，'-' 表示标准输入")
     ap.add_argument("--json", action="store_true", help="输出 JSON 格式")
+    ap.add_argument("--latex", action="store_true",
+                    help="按 LaTeX 源码处理（.tex 文件自动启用）")
     args = ap.parse_args()
 
     if args.file == "-":
         text = sys.stdin.read()
+        is_latex = args.latex
     else:
         text = Path(args.file).read_text(encoding="utf-8")
+        is_latex = args.latex or args.file.lower().endswith(".tex")
 
     entries = load_entries()
-    hits = scan(text, entries)
+    if is_latex:
+        context_lines = text.splitlines()  # 归一化前的原文，用于展示上下文
+        text = normalize_latex(text)
+    else:
+        context_lines = None
+    hits = scan(text, entries, context_lines)
 
     if args.json:
         print(json.dumps({"total": len(hits), "hits": hits}, ensure_ascii=False, indent=2))

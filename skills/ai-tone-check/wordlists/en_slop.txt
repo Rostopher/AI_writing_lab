@@ -50,6 +50,4 @@ re:—\s*not\s	对比框架	"X—not Y" 引入读者没问的对比
 re:\?\s*(?:because|the answer is|answer:|in short,)	自问自答	"Why? Because ..."
 re:\bmoreover\b	罐头过渡	高频才算问题
 re:\bfurthermore\b	罐头过渡	高频才算问题
-
-# ---- 不必要修饰 ----
-re:\b[A-Za-z]+(?:-[A-Za-z]+){2,}\b	生造复合词	三连及以上连字符，启发式，误报率较高
+re:,\s*not\s	对比框架	"X, not Y" 裸对比；LaTeX 归一化后亦覆盖 X---not Y
