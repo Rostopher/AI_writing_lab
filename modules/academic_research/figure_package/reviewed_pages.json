@@ -1,0 +1,162 @@
+{
+  "aer_2024_aer20211547": [
+    {
+      "pdf_page": 15,
+      "reason": "Page begins with a running-text Figure reference, not a figure caption; visually reviewed against original PDF"
+    }
+  ],
+  "aer_2025_aer20231656": [
+    {
+      "pdf_page": 25,
+      "reason": "Page begins with a running-text Figure reference, not a figure caption; visually reviewed against original PDF"
+    }
+  ],
+  "aer_2026_aer20241459": [
+    {
+      "pdf_page": 36,
+      "reason": "Page begins with a running-text Figure reference, not a figure caption; visually reviewed against original PDF"
+    }
+  ],
+  "jpe_2023_722227": [
+    {
+      "pdf_page": 19,
+      "reason": "Page begins with a running-text Figure reference, not a figure caption; visually reviewed against original PDF"
+    }
+  ],
+  "qje_2021_qjab029": [
+    {
+      "pdf_page": 39,
+      "reason": "Figure caption continues from the previous graphic page; no figure body on this page; original PDF retains the full caption"
+    }
+  ],
+  "qje_2022_qjab026": [
+    {
+      "pdf_page": 9,
+      "reason": "Figure caption continues from the previous graphic page; no figure body on this page; original PDF retains the full caption"
+    }
+  ],
+  "qje_2022_qjab028": [
+    {
+      "pdf_page": 20,
+      "reason": "Figure caption continues from the previous graphic page; no figure body on this page; original PDF retains the full caption"
+    },
+    {
+      "pdf_page": 22,
+      "reason": "Figure caption continues from the previous graphic page; no figure body on this page; original PDF retains the full caption"
+    },
+    {
+      "pdf_page": 34,
+      "reason": "Figure caption continues from the previous graphic page; no figure body on this page; original PDF retains the full caption"
+    }
+  ],
+  "qje_2022_qjab039": [
+    {
+      "pdf_page": 21,
+      "reason": "Figure caption continues from the previous graphic page; no figure body on this page; original PDF retains the full caption"
+    }
+  ],
+  "qje_2023_qjad011": [
+    {
+      "pdf_page": 36,
+      "reason": "Figure caption continues from the previous graphic page; no figure body on this page; original PDF retains the full caption"
+    }
+  ],
+  "qje_2023_qjad014": [
+    {
+      "pdf_page": 48,
+      "reason": "Figure caption continues from the previous graphic page; no figure body on this page; original PDF retains the full caption"
+    }
+  ],
+  "qje_2023_qjad021": [
+    {
+      "pdf_page": 37,
+      "reason": "Figure caption continues from the previous graphic page; no figure body on this page; original PDF retains the full caption"
+    }
+  ],
+  "qje_2024_qjad032": [
+    {
+      "pdf_page": 37,
+      "reason": "Figure caption continues from the previous graphic page; no figure body on this page; original PDF retains the full caption"
+    },
+    {
+      "pdf_page": 57,
+      "reason": "Figure caption continues from the previous graphic page; no figure body on this page; original PDF retains the full caption"
+    }
+  ],
+  "qje_2024_qjad040": [
+    {
+      "pdf_page": 35,
+      "reason": "Figure caption continues from the previous graphic page; no figure body on this page; original PDF retains the full caption"
+    }
+  ],
+  "qje_2024_qjad045": [
+    {
+      "pdf_page": 26,
+      "reason": "Figure caption continues from the previous graphic page; no figure body on this page; original PDF retains the full caption"
+    },
+    {
+      "pdf_page": 28,
+      "reason": "Figure caption continues from the previous graphic page; no figure body on this page; original PDF retains the full caption"
+    }
+  ],
+  "qje_2024_qjad049": [
+    {
+      "pdf_page": 17,
+      "reason": "Figure caption continues from the previous graphic page; no figure body on this page; original PDF retains the full caption"
+    },
+    {
+      "pdf_page": 49,
+      "reason": "Figure caption continues from the previous graphic page; no figure body on this page; original PDF retains the full caption"
+    }
+  ],
+  "qje_2024_qjad053": [
+    {
+      "pdf_page": 56,
+      "reason": "Figure caption continues from the previous graphic page; no figure body on this page; original PDF retains the full caption"
+    }
+  ],
+  "qje_2024_qjae006": [
+    {
+      "pdf_page": 4,
+      "reason": "Figure caption continues from the previous graphic page; no figure body on this page; original PDF retains the full caption"
+    },
+    {
+      "pdf_page": 25,
+      "reason": "Figure caption continues from the previous graphic page; no figure body on this page; original PDF retains the full caption"
+    },
+    {
+      "pdf_page": 36,
+      "reason": "Figure caption continues from the previous graphic page; no figure body on this page; original PDF retains the full caption"
+    },
+    {
+      "pdf_page": 39,
+      "reason": "Figure caption continues from the previous graphic page; no figure body on this page; original PDF retains the full caption"
+    },
+    {
+      "pdf_page": 43,
+      "reason": "Figure caption continues from the previous graphic page; no figure body on this page; original PDF retains the full caption"
+    }
+  ],
+  "qje_2024_qjae007": [
+    {
+      "pdf_page": 30,
+      "reason": "Figure caption continues from the previous graphic page; no figure body on this page; original PDF retains the full caption"
+    },
+    {
+      "pdf_page": 34,
+      "reason": "Figure caption continues from the previous graphic page; no figure body on this page; original PDF retains the full caption"
+    }
+  ],
+  "qje_2026_qjaf051": [
+    {
+      "pdf_page": 45,
+      "reason": "Source PDF page has Figure XI title and notes but the figure area is blank (no embedded image or drawing); source limitation"
+    }
+  ],
+  "restud_2026_rdaf056": [
+    {
+      "pdf_page": 30,
+      "reason": "Page begins with a running-text Figure reference, not a figure caption; visually reviewed against original PDF"
+    }
+  ]
+}
