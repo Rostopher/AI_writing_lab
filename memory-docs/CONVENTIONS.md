@@ -58,6 +58,11 @@ not_for: "决策来由（-> DECISIONS），运行方式（-> 仓库 RUNBOOK / RE
   含摘要全文的产物（`corpus_manifest.jsonl`、`dev_set_manifest.jsonl`、
   `*annotations*.jsonl`）不入库；派生指标、比较 JSON、manifest、报告入库
 - papers 全文来自 playwright_crawler 数据物化，本仓库不重复采集
+- 消费 playwright_crawler 大数据目录（top_journal_ocr / top_journal_dataset 等）
+  禁止递归扫描，先查索引（crosswalk.jsonl / DATA_DIRS.md）再定点读
+- 版面 / 抽取层结论必须**逐期刊验证**（MinerU 失败模式随期刊版式不同），
+  PDF 渲染目检为地面真值；改抽取规则前先写 probe 摸清结构，
+  启发式回收的内容默认配 LLM verdict 审计（DEC-008）
 - 大文件禁止整载入内存/上下文，默认头预览、抽样、流式处理
 
 ## 安全与错误处理
@@ -72,6 +77,7 @@ not_for: "决策来由（-> DECISIONS），运行方式（-> 仓库 RUNBOOK / RE
   是否触碰 DEC-007 数据边界）
 - LLM 凭据与上游数据根经环境变量配置，不落代码与文档默认值：
   `DEEPSEEK_API_KEY`（或 `DEEPSEEK_ENV_FILE` 指定 .env）、
+  `JEV_API_KEY`（TypeSafe Jev，经 Vercel AI Gateway；代码映射为 `AI_GATEWAY_API_KEY`）、
   `ABSTRACT_STRUCTURE_UPSTREAM_ROOT`（playwright_crawler 数据集）
 - 涉及数据处理/回归/诊断/测试/绘图任务时优先遵循 `research-engineering` skill 约定
 - 本地绝对路径、密钥、token 不提交

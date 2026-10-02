@@ -20,6 +20,8 @@ not_for: "操作规则（-> CONVENTIONS），未定论的讨论（-> SHORT_MEMOR
 | `DEC-005` | `governing` | 评价实现原则 | 评价先拆可观察维度（套话/空泛/重复总结/机械结构等），区分跨场景与文体偏好 | 摆脱AI味、评价、可观察维度、文体偏好 | [details](#dec-005) |
 | `DEC-006` | `governing` | 记忆系统与脚手架 | memory-docs（vibe-memory-system）作记忆层，research scaffold 提供研究目录；playwright_crawler 继续维护期刊数据 | memory-docs、research scaffold、docs、playwright_crawler | [details](#dec-006) |
 | `DEC-007` | `governing` | public 仓库与数据版本化边界 | 仓库公开于 GitHub；LLM 调用缓存与含摘要全文产物不入库，只入派生层；凭据与私有路径走环境变量 | public 仓库、数据版本化、摘要全文、环境变量、gitignore | [details](#dec-007) |
+| `DEC-008` | `governing`（LLM 标注管线范围） | 抽取修复与 LLM 审计同调用 | 启发式回收的抽取结果在同一次标注调用中加 verdict 字段让模型复核；不靠规则自信，靠模型判定落库可审计 | note_verdict、抽取审计、规则+LLM 混合、MinerU | [details](#dec-008) |
+| `DEC-009` | `active`（probe 验证通过，未接入正式管线） | Jev 评估模型的用法定位与问题设计 | Jev 作论文级语义判定第一层：成分用非互斥布尔、主类型用 Choice 直判（优于代码组合），置信度路由；多标签逐句标注用「单选+multi 补标」避免问题数笛卡尔积爆炸 | Jev、typesafe-ai、Vercel AI Gateway、Choice、成分布尔、置信度路由、逐句标注 | [details](#dec-009) |
 | `legacy-apw:DEC-001` | `governing`（学术范围） | 迁入项目的跨层写作边界 | 局部表达服务整篇论证；五层 taxonomy 的具体标签仍待验证，与本仓 DEC-002/003 并存 | academic_paper_writing、跨层、rhetorical move | [原始记录](../archive/20260908_academic_paper_writing_migration/source_project/memory-docs/detail_mem/DECISIONS.md#dec-001) |
 | `legacy-apw:DEC-002` | `governing`（学术范围） | 迁入项目的 validity-first 边界 | 事实与证据保持不能由流畅度抵消；rubric、阈值、schema 仍属 proposal，不改变通用 evaluation 预留状态 | validity、hard negative、rubric pilot | [原始记录](../archive/20260908_academic_paper_writing_migration/source_project/memory-docs/detail_mem/DECISIONS.md#dec-002) |
 
@@ -153,3 +155,49 @@ not_for: "操作规则（-> CONVENTIONS），未定论的讨论（-> SHORT_MEMOR
 `legacy-apw:` 命名空间保留检索，原始理由与证据原样归档；不与本仓 DEC 编号混用。
 这些设计边界仅适用于学术写作方向，具体分类和评价方案仍待验证。迁移未开展
 实验或实现通用评价器，静态 skills 调研排名仍不能作为实测结论。
+
+### DEC-008
+
+- 标题：抽取启发式修复 + LLM 审计同调用（note_verdict）
+- 日期：2026-09-20
+- 状态：`governing`（LLM 标注管线范围）
+- 背景：表注研究中 MinerU 版面异常导致大量表注漏抽（见
+  [MinerU 异常目录](../../notes/methods/mineru_layout_anomalies.md)）。规则修复
+  （前缀+几何位置）无法自证正确性；用户提出：反正每篇都要过 LLM 标注，
+  在同一次调用里让模型顺带判定给你的注是不是真是这张表的注。
+- 决策：启发式回收的内容在 payload 中带来源标记（footnote_source:
+  inline / after_body_caption / detached_text），标注 prompt 增加 per-table
+  note_verdict 字段（ok / wrong_table / not_note / uncertain），判定落库可审计；
+  输出 schema 做枚举与 idx 覆盖校验，不合格进 failures 重跑。
+- 理由：规则解决位置在哪（模型看不到版面），模型解决是不是注（规则不懂语义）；
+  同调用实现零边际成本审计。实测：detached_text 回收 99.0% ok，
+  after_body_caption 67.1% ok（差异暴露了后者规则的噪声，单靠规则自信发现不了）。
+- 影响：后续 LLM 标注管线凡含启发式预处理，默认带 verdict 式审计字段；
+  verdict 异常的记录分析时剔除或复核。
+- 证据 / 验证：run_table_notes.py prompt v0.3；run_v03_full（731 篇）note_verdict 分布。
+- 生命周期：governing（2026-09-20 起）
+
+### DEC-009
+
+- 标题：Jev 评估模型的用法定位与问题设计（成分布尔 + Choice 主类型 + 置信度路由）
+- 日期：2026-09-20
+- 状态：`active`（probe 验证通过，未接入正式管线；接入正式管线时转 governing）
+- 背景：用户提出测试 TypeSafe Jev（System One 评估模型，经 Vercel AI Gateway 的
+  `typesafe-ai/jev`，AI SDK `experimental_evaluate`）在经济学论文类型分类上的表现；
+  abstract_structure 已有 DS v4-flash 全量 4250 篇标注可作基准。
+- 决策：
+  1. Jev 定位为大规模语料的 cheap semantic mapper（第一层语义判定），不做最终论文理解；
+  2. 问题设计分层：非互斥成分用多个布尔问题，互斥主类型用 Choice 单选；
+     不用代码阈值组合替代 Choice（composed 81.8% vs Choice 91.2%）；
+  3. 置信度路由：Choice 概率 ≥0.95 自动接受（占 78%，准确率 97.8%），低置信度复核；
+  4. 多标签逐句标注用「每句主功能单选 + multi 布尔 + 对 multi 句二次补标」，
+     不用「每句 × 每功能」笛卡尔积（29 句长注 349 问会 503；改造后 65+40 问通过）；
+  5. 凭据 `JEV_API_KEY`（映射 `AI_GATEWAY_API_KEY`），代码硬编码模型 ID、无 fallback。
+- 理由：Jev 的 Choice 内部归一化比外部阈值规则更会做「主贡献」权衡；成分识别
+  与 DS 一致率 94.6-97.9% 说明布尔层可靠；multi 补标把二次调用限制在少数多功能句。
+- 影响：后续 Jev 标注任务沿用该分层模式；Jev 几乎不判 unclear，与 DS 对账时
+  DS=unclear 需单独处理；Jev 上游吞吐上限约 17/min（并发 5 与 15 相同），
+  全量任务并发设 5 即可，失败记录靠断点续跑重试。
+- 证据 / 验证：[benchmark 报告](../../notes/data/jev_paper_type_benchmark.md)
+  （4250 篇全量）；表注逐句设计验证见 `modules/academic_writing/probe_jev_table_notes/README.md`。
+- 生命周期：active（2026-09-20 起）

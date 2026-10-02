@@ -48,11 +48,28 @@ not_for: "术语定义（-> GLOSSARY），当前状态（-> STATUS），全量�
 - 经济学英文摘要写作（WHFFF）：[econ-abstract-writing](../../skills/econ-abstract-writing/SKILL.md)
   （加载入口英文；[中文译本](../../skills/econ-abstract-writing/SKILL.zh.md) 供阅读）。
 
+## 表注研究（academic_writing 首个实现）
+
+- 表单元抽取：[extract_table_units.py](../../modules/academic_writing/extract_table_units.py)
+  （v3 规则与证据见 docstring；异常目录 [mineru_layout_anomalies](../../notes/methods/mineru_layout_anomalies.md)）。
+- 标注执行：[run_table_notes.py](../../modules/academic_writing/run_table_notes.py)
+  （prompt v0.3 含 note_verdict）；汇总 [analyze_table_notes.py](../../modules/academic_writing/analyze_table_notes.py)。
+- Jev 逐句标注探针：[probe_jev_table_notes](../../modules/academic_writing/probe_jev_table_notes/README.md)
+  （表级类型 Choice + 每句单选 + multi 补标；拆句器 sentence_split.ts）。
+- 产物：`modules/academic_writing/outputs/table_notes/`（table_units_v3.jsonl、
+  run_v03_full/annotations.jsonl、probe_*、pdf_check/ 目检截图）。
+
+## Jev 评估模型（typesafe-ai/jev，经 Vercel AI Gateway）
+
+- 论文类型分类 benchmark：[probe_jev_classification](../../modules/academic_research/probe_jev_classification/README.md)；
+  报告 [jev_paper_type_benchmark](../../notes/data/jev_paper_type_benchmark.md)；用法定位见 DEC-009。
+
 ## 模块（规划中 → 建立后更新真实入口）
 
 - 学术研究（文献调研、问题定位、期刊案例）：`modules/academic_research/`
   （已实现子模块见上节）
 - 学术写作（规划、起草、修订、审核）：`modules/academic_writing/`
+  （表注管线已实现，见上节）
 - 通用写作流水线（预留）：`modules/writing_pipeline/`
 - 评价实现（预留）：`modules/evaluation/`
 - 商业写作（待任务出现后建立）：`modules/business_writing/`
