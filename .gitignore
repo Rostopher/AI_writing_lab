@@ -26,3 +26,16 @@ data/**/responses/
 data/**/corpus_manifest.jsonl
 data/**/dev_set_manifest.jsonl
 data/**/*annotations*.jsonl
+
+# Local paper/PDF/figure delivery packages; never commit the source corpus.
+data/processed/figure_packages/
+
+# Agent session / task scratch
+.pi/
+
+# Node dependencies inside probes
+modules/**/node_modules/
+
+# Probe intermediate dumps and module-generated outputs (keep source .py/.ts, drop artifacts)
+modules/**/outputs/
+modules/academic_writing/probe_empty_list.txt
